@@ -1,4 +1,3 @@
-
 body {
     margin: 0px;
     width: 100%;
@@ -93,6 +92,7 @@ main {
     max-width: 1600px;
     min-height: 100vh;
 }
+
 section {
     margin: 0px auto;
     padding: 100px 0px;
@@ -161,12 +161,13 @@ h1 {
         display: none;
     }
 }
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+
+/* Turn off parallax for tablets and phones */
+@media (max-device-width: 576px) {
 
     .bgimg-1,
     .bgimg-2,
     .bgimg-3 {
-        background-attachment: scroll;
+        display: none;
     }
 }
