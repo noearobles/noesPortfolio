@@ -76,16 +76,6 @@ h3 {
     color: #111;
 }
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
-
 
 
 
@@ -169,5 +159,14 @@ h1 {
 @media (min-width:576px) {
     #laptopLinks {
         display: none;
+    }
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
     }
 }
