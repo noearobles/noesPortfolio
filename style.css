@@ -1,0 +1,173 @@
+body {
+    margin: 0px;
+    width: 100%;
+    min-height: 100%;
+    background-color: black;
+    color: white;
+    line-height: 1.3;
+}
+
+
+
+
+#parallax {
+    height: 100%;
+    background-image: url("https://livingcities.org/wp-content/uploads/elementor/thumbs/AustinTX-prf41muppyeborhyqttl8arn9phrwmphkw7ok2axgo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Give the value "fixed" to the background-attachment property to create the parallax scrolling effect */
+    background-attachment: fixed;
+}
+
+/* Some mobile devices have a problem with background-attachment: fixed. So, you can use media queries to turn off the parallax effect for mobile devices: */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bgimg-1 {
+    background-image: url("https://entrepreneurship.ncsu.edu/wp-content/uploads/2022/02/austin-skyline.jpeg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("https://entrepreneurship.ncsu.edu/wp-content/uploads/2022/02/austin-skyline.jpeg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("https://entrepreneurship.ncsu.edu/wp-content/uploads/2022/02/austin-skyline.jpeg");
+    min-height: 400px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+
+
+
+
+
+
+main.fillHeight {
+    padding: 0px 150px;
+}
+
+main {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 200px 150px;
+}
+section {
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1000px;
+}
+
+h2.big-heading {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+h3.big-heading {
+    margin-top: 10px;
+    color: var(--slate);
+    line-height: 0.9;
+}
+
+.big-heading {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+a {
+    display: inline-block;
+}
+
+p {
+
+    margin: 20px 0px 0px;
+    max-width: 540px;
+
+}
+
+h1 {
+    margin: 0px 0px 30px 4px;
+    font-weight: 400;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image:
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap=' round' stroke-miterlimit=' 10' stroke-width=' 2' d=' M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler {
+    border: 1px;
+    color: #fff;
+}
+
+.navbar {
+    padding: 3px 10px
+}
+
+#social-icons {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+@media (min-width:0) {
+    #laptopLinks {
+        display: block;
+    }
+}
+
+@media (min-width:576px) {
+    #laptopLinks {
+        display: none;
+    }
+}
