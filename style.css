@@ -1,3 +1,4 @@
+
 body {
     margin: 0px;
     width: 100%;
@@ -42,7 +43,7 @@ body {
 
 .bgimg-1 {
     background-image: url("https://entrepreneurship.ncsu.edu/wp-content/uploads/2022/02/austin-skyline.jpeg");
-    min-height: 100%;
+    min-height: 400px;
 }
 
 .bgimg-2 {
@@ -91,7 +92,6 @@ main {
     width: 100%;
     max-width: 1600px;
     min-height: 100vh;
-    padding: 200px 150px;
 }
 section {
     margin: 0px auto;
