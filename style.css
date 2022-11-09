@@ -25,10 +25,6 @@
     color: black;
 }
 
-#pBgIMH{
-    margin-left: 800px;
-}
-
 body {
     margin: 0px;
     width: 100%;
@@ -38,6 +34,27 @@ body {
     line-height: 1.3;
     font-family: 'Roboto Mono', monospace;
 }
+
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+}
+
+.aboutStyledPic {
+    vertical-align: middle;
+}
+
+button {
+    display: block;
+
+}
+
 
 #parallax {
     height: 100%;
@@ -70,23 +87,6 @@ body {
     min-height: 400px;
 
 }
-
-/* .caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-} */
-
-/* .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-} */
 
 h3 {
     color: #fff;
@@ -123,9 +123,12 @@ h2.big-heading {
     font-size: clamp(40px, 8vw, 80px);
 }
 
+h2.numbered-heading {
+    margin: 10px 0px 40px;
+}
+
 h3.big-heading {
     margin-top: 10px;
-    color: var(--slate);
     line-height: 0.9;
 }
 
@@ -134,6 +137,12 @@ h3.big-heading {
     font-size: clamp(30px, 8vw, 50px);
 }
 
+
+
+.jobsStyled .inner {
+    min-height: 340px;
+    display: flex;
+}
 
 p {
 
