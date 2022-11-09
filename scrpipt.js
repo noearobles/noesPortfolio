@@ -1,26 +1,3 @@
-var dataImage = localStorage.getItem('imgData');
-bannerImg = document.getElementById('tableBanner');
-bannerImg.src = "data:image/png;base64," + dataImage;
-
-bannerImage = document.getElementById('bannerImg');
-imgData = getBase64Image(bannerImage);
-localStorage.setItem("PortfolioPicture.jpg", imgData);
-Here is the function that converts the image to a Base64 string:
-
-function getBase64Image(img) {
-    var canvas = document.createElement("canvas");
-    canvas.width = img.width;
-    canvas.height = img.height;
-
-    var ctx = canvas.getContext("2d");
-    ctx.drawImage(img, 0, 0);
-
-    var dataURL = canvas.toDataURL("image/png");
-
-    return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
-}
-
-
 function openCity(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;

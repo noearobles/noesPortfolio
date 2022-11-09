@@ -3,8 +3,6 @@
     /* Black background color */
     position: fixed;
     /* Make it stick/fixed */
-    top: -50px;
-    /* Hide the navbar 50 px outside of the top view */
     width: 100%;
     /* Full width */
     transition: top 0.3s;
@@ -92,8 +90,6 @@ h3 {
     color: #fff;
 }
 
-
-
 main.fillHeight {
     padding: 0px 150px;
 }
@@ -104,7 +100,9 @@ main {
     margin: 0px auto;
     width: 100%;
     max-width: 1600px;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -114,6 +112,7 @@ section {
     padding-left: 80px;
     max-width: 1000px;
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 h2.big-heading {
