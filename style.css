@@ -181,44 +181,16 @@ h1 {
     }
 }
 
-/* Turn off parallax for tablets and phones */
+
 @media (max-device-width: 576px) {
 
     .bgimg-1,
     .bgimg-2,
-    .bgimg-3 {
+    .bgimg-3,
+    .aboutStyledPic {
         display: none;
     }
-}
-
-#_navBar {
-    background-color: rgba(0, 0, 0, .5);
-    /* Black background color */
-    position: fixed;
-    /* Make it stick/fixed */
-    width: 100%;
-    /* Full width */
-    transition: top 0.3s;
-    z-index: 1000;
-    /* Transition effect when sliding down (and up) */
-}
-
-/* Style the navbar links */
-#_navBar a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-#_navBar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-
-main {
-    display: flex;
-    flex-direction: column;
+    .jobsStyled .inner{
+        display: block;
+    }
 }
