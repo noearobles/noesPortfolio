@@ -100,8 +100,8 @@ main {
     align-items: center;
     margin: 0px auto;
     width: 100%;
-    max-width: 1600px;
     height: 100vh;
+    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
@@ -113,7 +113,7 @@ section {
     padding-right: 80px;
     padding-bottom: 50px;
     padding-left: 80px;
-    max-width: 1000px;
+    max-width: 1600px;
     height: 100vh;
 }
 
@@ -136,7 +136,6 @@ h3.big-heading {
     margin: 0px;
     font-size: clamp(30px, 8vw, 50px);
 }
-
 
 
 .jobsStyled .inner {
