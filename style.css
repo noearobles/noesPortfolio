@@ -7,7 +7,7 @@
     /* Full width */
     transition: top 0.3s;
     z-index: 1000;
-    /* Transition effect when sliding down (and up) */
+    /* Transition effect when sliding down (and up) if desired */
 }
 
 /* Style the navbar links */
@@ -25,7 +25,9 @@
     color: black;
 }
 
-
+#pBgIMH{
+    margin-left: 800px;
+}
 
 body {
     margin: 0px;
@@ -42,7 +44,7 @@ body {
     background-image: url("https://livingcities.org/wp-content/uploads/elementor/thumbs/AustinTX-prf41muppyeborhyqttl8arn9phrwmphkw7ok2axgo.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     /* Give the value "fixed" to the background-attachment property to create the parallax scrolling effect */
     background-attachment: fixed;
 }
@@ -95,29 +97,26 @@ main.fillHeight {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     margin: 0px auto;
     width: 100%;
     max-width: 1600px;
     height: 100vh;
-    overflow: scroll;
     scroll-behavior: smooth;
 }
 
 section {
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
     padding-top: 50px;
     padding-right: 80px;
     padding-bottom: 50px;
     padding-left: 80px;
     max-width: 1000px;
     height: 100vh;
-    scroll-snap-align: start;
 }
 
-.scrollable-element {
-    scrollbar-color: red yellow;
-  }
 
 h2.big-heading {
     margin: 0px;
