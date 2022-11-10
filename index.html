@@ -101,7 +101,7 @@
         <main class="pages">
             <div class="parallax" div>
                 <section class="hero" id="home">
-                    <div class="fadeup-enter-done" style="transition-delay: 100ms;">
+                    <div class="inner">
                         <h1>Hi, my name is</h1>
                         <div class="fadeup-enter-done" style="transition-delay: 200ms;">
                             <h2 class="big-heading">Noe Robles.</h2>
@@ -162,41 +162,41 @@
 
 
                 <section id="resume" class="jobsStyled">
-                    <div class="fadeup-enter-done" style="transition-delay: 100ms;">
-                        <h2 class="numbered-heading">Where I’ve Worked</h2>
-                        <div class="inner">
-                            <div id="buttons" role="tablist">
-                                <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-                            </div>
-                            <!-- Tab content -->
-                            <div id="London" class="tabcontent">
-                                <h3>London</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, a illum voluptas
-                                    distinctio harum quae dolores cum, dignissimos rerum cumque quos excepturi nisi?
-                                    Dolorum maiores, qui veritatis animi fuga minus!</p>
-                            </div>
 
-                            <div id="Paris" class="tabcontent">
-                                <h3>Paris</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel doloribus
-                                    exercitationem aut minus quo libero sequi tempore voluptas a! Assumenda doloribus
-                                    provident a est! Explicabo alias molestias doloribus nisi.</p>
-                            </div>
+                    <h2 class="numbered-heading">Where I’ve Worked</h2>
+                    <div class="inner">
+                        <div id="buttons" role="tablist">
+                            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                        </div>
+                        <!-- Tab content -->
+                        <div id="London" class="tabcontent">
+                            <h3>London</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, a illum voluptas
+                                distinctio harum quae dolores cum, dignissimos rerum cumque quos excepturi nisi?
+                                Dolorum maiores, qui veritatis animi fuga minus!</p>
+                        </div>
 
-                            <div id="Tokyo" class="tabcontent">
-                                <h3>Tokyo</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ratione
-                                    blanditiis, dolor, laboriosam exercitationem quo iure asperiores voluptas maiores
-                                    deleniti a mollitia cupiditate nulla beatae quod repellat atque sint corrupti!</p>
-                            </div>
+                        <div id="Paris" class="tabcontent">
+                            <h3>Paris</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel doloribus
+                                exercitationem aut minus quo libero sequi tempore voluptas a! Assumenda doloribus
+                                provident a est! Explicabo alias molestias doloribus nisi.</p>
+                        </div>
+
+                        <div id="Tokyo" class="tabcontent">
+                            <h3>Tokyo</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ratione
+                                blanditiis, dolor, laboriosam exercitationem quo iure asperiores voluptas maiores
+                                deleniti a mollitia cupiditate nulla beatae quod repellat atque sint corrupti!</p>
                         </div>
                     </div>
+
                 </section>
-<div id="pBgIMG" class="bgimg-1"></div>
+                <div id="pBgIMG" class="bgimg-1"></div>
                 <section id="contact" class="contactStyled">
-                    <div class="fadeup-enter-done" style="transition-delay: 100ms;">
+                    <div class="inner">
                         <h2 class="numbered-heading overline">What’s Next?</h2>
                         <h2 class="title">Get In Touch</h2>
                         <p>My inbox is always open. Whether you
@@ -204,6 +204,66 @@
                             class="email-link" href="roblesnoe1030@gmail.com" rel="noopener noreferrer" target="#">Say
                             Hello</a>
                     </div>
+
+                    <div class="columns">
+                        <article>
+                            <h2 class="article__title">Why don't we have a talk?</h2>
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="phone">Phone</label>
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+                            <div>
+                                <label for="url">URL</label>
+                                <input type="url" name="url" id="url">
+                            </div>
+                        </article>
+                        <article>
+                            <h2 class="article__title">How did you hear about me?</h2>
+                            <div>
+                                <input type="radio" name="howDid" id="classmate">
+                                <label for="classmate">Classmate</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="howDid" id="resumesubmission">
+                                <label for="resumesubmission">Resume Sumbission</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="howDid" id="linkedin">
+                                <label for="linkedin">LinkedIn</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="howDid" id="codingrec">
+                                <label for="codingrec">Coding Academy Rec</label>
+                            </div>
+                        </article>
+                        <article>
+                            <h2 class="article__title">Would you like to be contacted?</h2>
+                            <div>
+                                <input type="radio" name="radAnswer" id="yes">
+                                <label for="yes">Yes</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="radAnswer" id="no">
+                                <label for="no">No</label>
+                            </div>
+                            <h2>Would you like a birthday wish?</h2>
+                            <div>
+                                <label for="date">Birthdate</label>
+                                <input type="date" name="date" id="date" min="2019-06-10">
+                            </div>
+                            <button type="reset">Reset</button>
+                            <button type="submit">Submit</button>
+                        </article>
+                    </div>
+                    </form>
                 </section>
 
         </main>

@@ -1,14 +1,16 @@
 @keyframes slideInLeft {
     0% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
+
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
-  header {
+}
+
+header {
     animation: 1s ease-out 0s 1 slideInLeft;
-  }
+}
 
 #_navBar {
     background-color: rgba(0, 0, 0, .5);
@@ -118,14 +120,12 @@ main {
 }
 
 section {
-    margin-top: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
+    align-self: center;
+    max-width: 1600px;
     padding-top: 50px;
     padding-right: 80px;
     padding-bottom: 50px;
     padding-left: 80px;
-    max-width: 1600px;
     height: 100vh;
 }
 
@@ -154,6 +154,10 @@ h3.big-heading {
     min-height: 340px;
     display: flex;
 }
+.columns{
+    display: flex;
+}
+
 
 p {
 
@@ -202,13 +206,23 @@ h1 {
     .aboutStyledPic {
         display: none;
     }
-     .inner{
-        display: block;
-    }
 
-    section, h2, div{
+    section,
+    h2,
+    div {
         margin: 0px auto;
     }
-    
+
+    .inner, .columns {
+        display: flex;flex-direction: column;
+    }
+    #buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 30px;
+    }
+    .hero .inner{
+        gap: 0px;
+    }
 
 }
