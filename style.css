@@ -54,7 +54,7 @@ body {
     box-sizing: inherit;
 }
 
-.inner {
+._inner {
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 50px;
