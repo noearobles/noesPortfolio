@@ -212,7 +212,7 @@ h1 {
         margin: 0px auto;
     }
 
-    .inner, .columns {
+    .inner, .columns, ._inner, .contactStyled {
         display: flex;flex-direction: column;
     }
     #buttons {
