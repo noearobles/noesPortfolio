@@ -202,7 +202,13 @@ h1 {
     .aboutStyledPic {
         display: none;
     }
-    .jobsStyled .inner{
+     .inner{
         display: block;
     }
+
+    section, h2, div{
+        margin: 0px auto;
+    }
+    
+
 }
