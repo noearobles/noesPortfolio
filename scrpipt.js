@@ -1,3 +1,8 @@
+const preloader = document.querySelector('#app-preloader')
+preloader.style.opacity = '0'
+preloader.style.visibility = 'hidden'
+
+
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;

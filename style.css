@@ -36,7 +36,6 @@ header {
 
 #_navBar a:hover {
     background-color: #ddd;
-    color: black;
 }
 
 body {
@@ -87,6 +86,18 @@ button {
     }
 }
 
+.bgimg-2 {
+    background-image: url("https://entrepreneurship.ncsu.edu/wp-content/uploads/2022/02/austin-skyline.jpeg");
+}
+
+.bgimg-3 {
+    background-image: url("https://www.telegraph.co.uk/content/dam/Travel/Destinations/North%20America/USA/texas/austin-sixth-street-texas-nightlife.jpg")
+}
+
+.bgimg-1 {
+    background-image: url("https://cdn.wallpapersafari.com/76/31/PgmM08.jpg")
+}
+
 
 .bgimg-1,
 .bgimg-2,
@@ -97,7 +108,6 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("https://entrepreneurship.ncsu.edu/wp-content/uploads/2022/02/austin-skyline.jpeg");
     min-height: 400px;
 
 }
@@ -153,7 +163,8 @@ h3.big-heading {
     min-height: 340px;
     display: flex;
 }
-.columns{
+
+.columns {
     display: flex;
 }
 
@@ -212,15 +223,21 @@ h1 {
         margin: 0px auto;
     }
 
-    .inner, .columns, ._inner, .contactStyled {
-        display: flex;flex-direction: column;
+    .inner,
+    .columns,
+    ._inner,
+    .contactStyled {
+        display: flex;
+        flex-direction: column;
     }
+
     #buttons {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 30px;
     }
-    .hero .inner{
+
+    .hero .inner {
         gap: 0px;
     }
 
