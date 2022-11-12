@@ -50,7 +50,7 @@
     -webkit-animation-name: fadeInUp;
 }
 
-#footerNav{
+#footerNav {
     padding-left: 200px;
     padding-bottom: 200px;
 }
@@ -83,12 +83,10 @@ header {
     background-color: #ddd;
 }
 
-footer{
-    
-}
+footer {}
 
-#bottomLeftNav{
-   justify-self:center;
+#bottomLeftNav {
+    justify-self: center;
 }
 
 .line-1 {
@@ -98,7 +96,7 @@ footer{
     background: white;
     border-right: 16px;
     border-right-color: white;
-  }
+}
 
 
 #parallax {
@@ -195,16 +193,16 @@ section {
     padding: 20px;
 }
 
-.inner .aboutStyled{
+.inner .aboutStyled {
     display: flex;
     flex-direction: row;
     box-shadow: 0 20px 30px -15px #f72585;
     padding: 20px;
 }
 
-.aboutStyledPic{
+.aboutStyledPic {
     padding-left: 70px;
-    
+
 }
 
 .inner {
@@ -216,9 +214,7 @@ section {
     box-shadow: 15px 20px 30px -15px #06d6a0;
 }
 
-h1 {
-
-}
+h1 {}
 
 
 
@@ -269,6 +265,19 @@ button {
     box-sizing: inherit;
 }
 
+
+
+@media (min-device-width: 576px) {
+    main {
+       
+    }
+
+    .inner {
+        margin: 5 auto;
+        padding: 100px;
+    }
+}
+
 @media (min-width:576px) {
     #mobileLinks {
         display: none;
@@ -291,9 +300,14 @@ button {
         height: auto;
     }
 
+    #footerNav {
+        padding: 0;
+    }
 
     .inner {
         margin: 0px auto;
+        padding: 20px;
+
     }
 
     #buttons {
