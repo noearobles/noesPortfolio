@@ -1,6 +1,4 @@
-const preloader = document.querySelector('#app-preloader')
-preloader.style.opacity = '0'
-preloader.style.visibility = 'hidden'
+
 
 
 function openCity(evt, cityName) {
@@ -24,27 +22,15 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-
-window.onscroll = function () { scrollFunction() };
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("_navBar").style.top = "0";
-  }
-  // } else {
-  //   document.getElementById("_navBar").style.top = "-50px";
-  // }
+var lastScrollTop;
+navbar = document.getElementById('_navBar');
+window.addEventListener('scroll',function(){
+var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+if(scrollTop > lastScrollTop){
+navbar.style.top='-80px';
 }
-
-
-// maye???//
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("_navBar").style.top = "0";
-//   } else {
-//     document.getElementById("_navBar").style.top = "-50px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
+else{
+navbar.style.top='0';
+}
+lastScrollTop = scrollTop;
+});

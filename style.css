@@ -1,3 +1,4 @@
+/* Animation */
 @keyframes slideInLeft {
     0% {
         transform: translateX(-100%);
@@ -8,13 +9,54 @@
     }
 }
 
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+
 header {
-    animation: 1s ease-out 0s 1 slideInLeft;
+    animation: 2s ease-out 0s 1 slideInLeft;
 }
 
 #_navBar {
-    background-color: rgba(0, 0, 0, .5);
-    /* Black background color */
+    top: 0;
     position: fixed;
     /* Make it stick/fixed */
     width: 100%;
@@ -38,37 +80,6 @@ header {
     background-color: #ddd;
 }
 
-body {
-    margin: 0px;
-    width: 100%;
-    min-height: 100%;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    line-height: 1.3;
-    font-family: 'Roboto Mono', monospace;
-}
-
-::before,
-::after {
-    box-sizing: inherit;
-}
-
-._inner {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 50px;
-}
-
-.aboutStyledPic {
-    vertical-align: middle;
-}
-
-button {
-    display: block;
-
-}
-
-
 #parallax {
     height: 100%;
     background-image: url("https://livingcities.org/wp-content/uploads/elementor/thumbs/AustinTX-prf41muppyeborhyqttl8arn9phrwmphkw7ok2axgo.jpg");
@@ -77,13 +88,6 @@ button {
     background-size: 100%;
     /* Give the value "fixed" to the background-attachment property to create the parallax scrolling effect */
     background-attachment: fixed;
-}
-
-/* Some mobile devices have a problem with background-attachment: fixed. So, you can use media queries to turn off the parallax effect for mobile devices: */
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-    }
 }
 
 .bgimg-2 {
@@ -112,8 +116,30 @@ button {
 
 }
 
-h3 {
+
+.navbar-dark .navbar-toggler-icon {
+    background-image:
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap=' round' stroke-miterlimit=' 10' stroke-width=' 2' d=' M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler {
+    border: 1px;
     color: #fff;
+}
+
+.navbar {
+    padding: 3px 10px
+}
+
+
+body {
+    margin: 0px;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    line-height: 1.3;
+    font-family: 'Roboto Mono', monospace;
 }
 
 main.fillHeight {
@@ -130,13 +156,38 @@ main {
 }
 
 section {
+    margin-left: 200px;
+    margin-right: 200px;
     max-width: 1600px;
     padding-top: 50px;
     padding-right: 80px;
     padding-bottom: 50px;
     padding-left: 80px;
     height: 100vh;
+    text-align: left;
 }
+
+#about{
+    display: flex;
+}
+
+.aboutStyledPic{
+padding-top: 100px;
+padding-left: 200px;
+}
+
+.inner {
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+h1 {
+    margin: 200px 0px 30px 4px;
+    font-weight: 100;
+}
+
+
 
 
 h2.big-heading {
@@ -155,18 +206,16 @@ h3.big-heading {
 
 .big-heading {
     margin: 0px;
-    font-size: clamp(30px, 8vw, 50px);
+    font-size: clamp(10px, 8vw, 30px);
 }
 
 
-.jobsStyled .inner {
-    min-height: 340px;
-    display: flex;
+h3 {
+    color: #fff;
 }
 
-.columns {
-    display: flex;
-}
+
+
 
 
 p {
@@ -176,23 +225,15 @@ p {
 
 }
 
-h1 {
-    margin: 0px 0px 30px 4px;
-    font-weight: 400;
+button {
+    display: block;
+
 }
 
-.navbar-dark .navbar-toggler-icon {
-    background-image:
-        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap=' round' stroke-miterlimit=' 10' stroke-width=' 2' d=' M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
 
-.navbar-dark .navbar-toggler {
-    border: 1px;
-    color: #fff;
-}
-
-.navbar {
-    padding: 3px 10px
+::before,
+::after {
+    box-sizing: inherit;
 }
 
 @media (min-width:0) {
@@ -217,18 +258,15 @@ h1 {
         display: none;
     }
 
-    section,
-    h2,
-    div {
+
+    section {
         margin: 0px auto;
+        height: auto;
     }
 
-    .inner,
-    .columns,
-    ._inner,
-    .contactStyled {
-        display: flex;
-        flex-direction: column;
+
+    .inner {
+        margin: 0px auto;
     }
 
     #buttons {
@@ -236,6 +274,7 @@ h1 {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 30px;
     }
+
 
     .hero .inner {
         gap: 0px;
