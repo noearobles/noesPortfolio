@@ -39,7 +39,9 @@ body {
     height: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: scroll;
 }
+
 
 .animated {
     animation-duration: 2s;
@@ -59,10 +61,8 @@ body {
 }
 
 #footerNav {
-    padding-left: 100px;
-    padding-bottom: 50px;
-    z-index: 2000;
-
+    width: auto;
+    z-index: 1000;
 }
 
 header {
@@ -92,13 +92,6 @@ header {
 #_navBar a:hover {
     background-color: #ddd;
 }
-
-footer {}
-
-#bottomLeftNav {
-    flex-direction: column;
-}
-
 
 
 .line-1 {
@@ -195,9 +188,8 @@ main {
 }
 
 section {
+    margin: 0 auto;
     margin-top: 100px;
-    margin-left: 200px;
-    margin-right: 200px;
     min-width: fit-content;
     padding-top: 170px;
     padding-right: 80px;
@@ -250,7 +242,7 @@ section {
 }
 
 .aboutStyledPic {
- 
+
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -260,19 +252,12 @@ section {
 }
 
 
-.aboutStyled {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: left;
-    margin: auto;
-}
 
 
 .inner {
-
+    min-width: auto;
     border-radius: 10px;
-    padding: 50px;
+    padding: 20px;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 20px;
@@ -337,9 +322,7 @@ button.tablinks {
 /* ****Start of Tablet Media Query****** */
 
 
-@media (min-width: 800px) and (max-width: 1280Px) {
-
-
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
 
     #footerNav {
         padding-left: 10px;
@@ -350,8 +333,7 @@ button.tablinks {
 
     section {
 
-        margin-left: 30px;
-        margin-right: 30px;
+
         min-height: 100vh;
         max-height: min-content;
     }
@@ -363,6 +345,7 @@ button.tablinks {
 
 
     .inner {
+        width: auto;
         margin-top: 50px;
         min-height: fit-content;
 
@@ -376,10 +359,39 @@ button.tablinks {
         margin: 0px;
         font-size: clamp(20px, 6vw, 40px);
     }
+}
+
+
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    /* your css rules for ipad portrait */
+
+    section {
+        margin-right: 5px;
+    }
+
+    .inner {
+        width: 200px
+    }
 
 }
 
-@media (max-width:800px) and (min-width:576px) {
+
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+    /* your css rules for ipad landscape */
+}
+
+
+
+@media (min-width:576px) {
+    #mobileLinks {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
     .navbar {
         font-size: smaller;
     }
@@ -407,8 +419,7 @@ button.tablinks {
 
     section {
 
-        margin-left: 30px;
-        margin-right: 30px;
+
         min-height: 100vh;
         max-height: min-content;
     }
@@ -433,125 +444,17 @@ button.tablinks {
 }
 
 
-@media (min-width:576px) {
-    #mobileLinks {
-        display: none;
-    }
-}
 
 
-
-
-@media (max-width: 576px) {
-    body {
-        line-height: 1.6;
-    }
-
-    .line-1 {
-        margin-left: 15px;
-    }
-
-    .navbar {
-        font-size: x-small;
-    }
-
-    h1 {
-        font-size: clamp(10px, 4vw, 20px);
-    }
-
-    h2 .numbered-heading {
-        font-size: 18px;
-    }
-
-    h2.big-heading {
-        margin: 0px;
-        font-size: clamp(10px, 10vw, 30px);
-    }
-
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        display: none;
-    }
-
-
-    section {
-        margin: 0px auto;
-        height: auto;
-
-    }
-
-
-    h3.big-heading {
-        font-size: 20px;
-    }
-
-    #footerNav {
-        padding-left: 10px;
-        padding-bottom: 100px;
-
-    }
-
-    .inner {
-        width: auto;
-        min-height: 50vh;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .inner .jobsStyled,
-    .inner .aboutStyled,
-    .inner .contactStyled,
-    .inner .homeStyled {
-        box-shadow: 0 20px 30px -15px #f72585;
-        height: auto;
-        width: auto;
-
-    }
-
-}
-
-
-
-
-
-
-@media (max-device-width: 400px) {
-    body {
-        font-size: x-small;
-
-    }
-
-    section {
-        min-height: auto;
-    }
-
-    button {
-        background-color: #023047;
-        color: #06d6a0;
-        box-shadow: 0 20px 30px -15px #f72585;
-    }
-
-    button.tablinks {
-        min-width: auto;
-        border-radius: 10px;
-    }
-
-
-
-    .jobsStyled,
-    .aboutStyled,
-    .contactStyled,
-    .homeStyled {
-
-        min-width: auto;
-    }
-}
 
 @media (max-width:300px) {
 
+    #footerNav {
+        display: none;
+    }
+
     section {
-        margin: auto;
+
         padding: 5%;
     }
 
