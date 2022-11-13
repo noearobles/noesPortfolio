@@ -22,15 +22,15 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-var lastScrollTop;
-navbar = document.getElementById('_navBar');
-window.addEventListener('scroll',function(){
-var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-if(scrollTop > lastScrollTop){
-navbar.style.top='-80px';
-}
-else{
-navbar.style.top='0';
-}
-lastScrollTop = scrollTop;
-});
+// var lastScrollTop;
+// navbar = document.getElementById('_navBar');
+// window.addEventListener('scroll',function(){
+// var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// if(scrollTop > lastScrollTop){
+// navbar.style.top='-80px';
+// }
+// else{
+// navbar.style.top='0';
+// }
+// lastScrollTop = scrollTop;
+// });
