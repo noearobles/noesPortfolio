@@ -35,6 +35,10 @@
     }
 }
 
+body{
+    height: 100%;
+}
+
 .animated {
     animation-duration: 2s;
     animation-fill-mode: both;
