@@ -61,6 +61,7 @@ body {
 #footerNav {
     padding-left: 100px;
     padding-bottom: 50px;
+    z-index: 2000;
 
 }
 
@@ -98,12 +99,14 @@ footer {}
     flex-direction: column;
 }
 
+
+
 .line-1 {
     height: 200px;
     width: 1px;
     background: rgb(0, 0, 0);
     background-color: #06d6a0;
-    align-self: center;
+    margin-left: 23px;
 
 }
 
@@ -144,7 +147,7 @@ footer {}
     max-height: 600px;
 }
 
-.aboutStyledPic img {}
+.aboutStyledPic {}
 
 .column {
     flex-direction: column;
@@ -237,28 +240,30 @@ section {
 }
 
 .tab .tablinks:hover {
-    background-color: #f72585;
+    background-color: #001219;
 }
 
 .skills-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #06d6a0;
-}
-
-#hero {
-    display: inline
+    column-width: auto;
 }
 
 .aboutStyledPic {
-    padding-bottom: 30px;
-    float: right;
+ 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-width: 50px;
+    border-color: #001219;
+    align-self: center;
 }
 
 
 .aboutStyled {
-    display: grid;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: left;
     margin: auto;
 }
@@ -267,7 +272,7 @@ section {
 .inner {
 
     border-radius: 10px;
-    padding: 70px;
+    padding: 50px;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 20px;
@@ -299,7 +304,7 @@ h2.numbered-heading {
 
 h3.big-heading {
     margin-top: 10px;
-    line-height: 0.9;
+    line-height: 1.3;
     font-size: 50px;
 }
 
@@ -310,7 +315,7 @@ h3.big-heading {
 
 
 h3 {
-    color: #fff;
+    color: #06d6a0;
 }
 
 
@@ -322,11 +327,6 @@ button.tablinks {
 
 
 
-.hero .inner {
-    gap: 0px;
-}
-
-
 
 
 ::before,
@@ -335,16 +335,6 @@ button.tablinks {
 }
 
 /* ****Start of Tablet Media Query****** */
-
-
-
-
-@media (max-width:1290px) {
-    .aboutStyledPic {
-        display: none;
-    }
-}
-
 
 
 @media (min-width: 800px) and (max-width: 1280Px) {
@@ -453,12 +443,24 @@ button.tablinks {
 
 
 @media (max-width: 576px) {
+    body {
+        line-height: 1.6;
+    }
+
+    .line-1 {
+        margin-left: 15px;
+    }
+
     .navbar {
         font-size: x-small;
     }
 
     h1 {
         font-size: clamp(10px, 4vw, 20px);
+    }
+
+    h2 .numbered-heading {
+        font-size: 18px;
     }
 
     h2.big-heading {
@@ -481,7 +483,7 @@ button.tablinks {
 
 
     h3.big-heading {
-        font-size: 7px;
+        font-size: 20px;
     }
 
     #footerNav {
@@ -493,17 +495,17 @@ button.tablinks {
     .inner {
         width: auto;
         min-height: 50vh;
-        padding: 20px;
-        font-size: 20px;
-
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .inner .jobsStyled,
     .inner .aboutStyled,
-    .inner .contactStyled {
+    .inner .contactStyled,
+    .inner .homeStyled {
         box-shadow: 0 20px 30px -15px #f72585;
-        padding: 20px;
         height: auto;
+        width: auto;
 
     }
 
@@ -517,7 +519,7 @@ button.tablinks {
 @media (max-device-width: 400px) {
     body {
         font-size: x-small;
-        margin: 0px auto;
+
     }
 
     section {
