@@ -26,6 +26,9 @@ init();
 
 // **********************this is to display the tabs for the resume portion*********************//
 
+
+
+
 function openJob(evt, jobName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -47,5 +50,5 @@ function openJob(evt, jobName) {
   evt.currentTarget.className += " active";
 }
 
-
+openJob();
 

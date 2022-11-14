@@ -77,21 +77,6 @@ footer {
 /* ************************BODY***************************************** */
 
 
-section {
-    display: flex;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    padding-right: 400px;
-    padding-left: 400px;
-    min-height: 100vh;
-
-    text-align: left;
-}
-
-
 body {
     color: azure;
     height: 100%;
@@ -100,33 +85,39 @@ body {
     -webkit-overflow-scrolling: scroll;
     background: #242f3f;
     overflow: hidden;
-    margin: 0px;
     width: 100%;
     min-height: 100%;
     line-height: 1.3;
     font-size: 20px;
 }
 
-main.fillHeight {
-    padding: 0px 150px;
+section {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    max-height: 1000vh;
+    min-height: 100vh;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: left;
 }
 
-main {
-
-    align-items: center;
-    width: 100%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
 
 
 .inner {
-    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 10px;
     padding: 20px;
     background-color: #023047;
     box-shadow: 15px 20px 30px -15px #06d6a0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
+
 
 .homeStyled,
 .jobsStyled,
@@ -134,6 +125,8 @@ main {
 .contactStyled {
     box-shadow: 0 20px 30px -15px #f72585;
     padding: 5%;
+    min-width: auto;
+    max-width: 750px;
 }
 
 .column {
@@ -149,12 +142,35 @@ main.fillHeight {
 main {
     background-color: #001219;
     align-items: center;
-    margin: 0px auto;
+
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
+
+main.fillHeight {
+    padding: 0px 150px;
+}
+
+main {
+    background-color: #001219;
+    align-items: center;
+    width: 100%;
+    overflow-y: scroll;
+
+}
+
+#home {}
+
+#hero {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 20px;
+
+}
+
 
 #contact .inner {
     padding-bottom: 50px;
@@ -204,14 +220,6 @@ main {
     align-self: center;
 }
 
-#hero {
-    display: flex;
-    justify-content: center;
-
-    padding-top: 20px;
-
-}
-
 
 h1 {
     margin: auto;
@@ -248,6 +256,9 @@ button.tablinks {
     border-radius: 5px;
 }
 
+#buttons.tab {
+    display: flex;
+}
 
 ::before,
 ::after {
@@ -396,16 +407,6 @@ button.tablinks {
 
 /* *********************PARALLAX ELEMENTS************************************ */
 
-#parallax {
-    height: 100%;
-    background-image: url("https://livingcities.org/wp-content/uploads/elementor/thumbs/AustinTX-prf41muppyeborhyqttl8arn9phrwmphkw7ok2axgo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /* Give the value "fixed" to the background-attachment property to create the parallax scrolling effect */
-    background-attachment: fixed;
-}
-
 .bgimg-2 {
     background-image: url("https://entrepreneurship.ncsu.edu/wp-content/uploads/2022/02/austin-skyline.jpeg");
 }
@@ -436,40 +437,45 @@ button.tablinks {
 
 /* ******************MEDIA QUERIES**************************** */
 
-
 @media only screen and (max-device-width: 1366px) {
-
-
     #pBgIMG {
         display: none;
     }
+
+  
+
 }
 
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
 
 /* ****Start of Tablet Media Query****** */
 
-
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
 
     body {
         font-size: 15px;
     }
 
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        display: none;
-    }
-
-
-
     section {
-        padding-left: 200px;
-        padding-right: 200px;
+
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
-    .inner {}
+    h1 {
+        font-size: 30px;
+    }
 
+    h3.big-heading {
+        font-size: 35px;
+    }
 
     h2.big-heading {
         margin: 0px;
@@ -477,42 +483,10 @@ button.tablinks {
     }
 }
 
+/****************your css rules for ipad portrait *********************/
 
-@media screen and (max-device-width: 1200px) {
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {}
 
-    section {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-
-}
-
-
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-
-    /* your css rules for ipad portrait */
-
-
-    section {
-        padding-left: 100px;
-        padding-right: 100px;
-
-    }
-
-    .inner {
-        min-height: 50vh;
-
-    }
-
-}
-
-@media (min-width:576px) {
-    #mobileLinks {
-        display: none;
-    }
-
-}
 
 
 
@@ -525,21 +499,32 @@ button.tablinks {
         display: none;
     }
 
-    section {
-        padding: 10%;
-        min-height: 100vh;
-        max-height: min-content;
-        margin-right: 5px;
+
+    h1 {}
+
+    h3.big-heading {}
+
+    h2.big-heading {}
+
+
+}
+
+
+
+@media all and (device-width: 1200px) {
+    h2.big-heading {
+        font-size: 40px;
     }
+}
 
-    .inner {
-
-        min-height: 50vh;
-        margin-top: 50px;
-
+@media (min-width:576px) {
+    #mobileLinks {
+        display: none;
     }
 
 }
+
+
 
 @media (max-width:576px) {
 
@@ -559,6 +544,9 @@ button.tablinks {
     }
 }
 
+
+
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
 
     button.tablinks {
@@ -573,14 +561,6 @@ button.tablinks {
         cursor: pointer;
         background-color: rgb(2, 48, 71);
         color: rgb(6, 214, 160);
-    }
-
-
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        display: none;
-
     }
 
     .navbar {
@@ -602,24 +582,6 @@ button.tablinks {
         font-size: 30px;
     }
 
-    #home {
-        padding-top: 0;
-    }
-
-    section {
-        margin: auto;
-
-        height: auto;
-
-
-    }
-
-    .inner {
-        margin-top: 50px;
-        min-height: auto;
-
-
-    }
 
     .homeStyled,
     .jobsStyled,
@@ -629,6 +591,8 @@ button.tablinks {
         padding: 20px;
         font-size: small;
     }
+
+
 
 
 }
@@ -641,9 +605,7 @@ button.tablinks {
 
 @media (max-width:300px) {
 
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3,
+
     #footerNav {
         display: none;
     }
@@ -674,7 +636,7 @@ button.tablinks {
     }
 
     .inner {
-        margin: 0;
+
         padding: 5%;
         font-size: smaller
     }
