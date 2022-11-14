@@ -591,16 +591,18 @@ button.tablinks {
 
 
     h1 {
-        font-size: clamp(2px, 3vw, 7px);
+        font-size: clamp(20px, 50vw, 10px);
     }
 
     h2.big-heading {
 
-        font-size: clamp(5px, 7vw, 5px);
+        font-size: clamp(40px, 60vw, 12px);
     }
 
 
-    h3.big-heading {}
+    h3.big-heading {
+        font-size: 30px;
+    }
 
     #home {
         padding-top: 0;
@@ -616,7 +618,7 @@ button.tablinks {
 
     .inner {
         margin-top: 50px;
-        min-height: fit-content;
+        min-height: auto;
 
 
     }
