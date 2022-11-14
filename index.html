@@ -13,14 +13,9 @@
 
 <body class="pages">
     <header>
-
+        <div class="parallax" div>
         <!-- *******NAV BAR******** -->
-        <nav class="navbar navbar-expand-sm navbar-dark justify-content-center" id="_navBar">
-            <a href="https://www.linkedin.com/in/noe-robles-11899b60/"
-                class="navbar-brand d-flex mr-auto text-white"><img
-                    src="https://cdn.iconfinder.com/stored_data/711517/128/png?token=1668323511-qrpBWk4PozUvHGe6isFOPuTpVOjcvnyDM9LUntLjP4s%3D"
-                    alt="bootstrap" width="30" height="30">
-            </a>
+        <nav class="navbar navbar-expand-sm navbar-dark justify-content-end" id="_navBar">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                 <span class="navbar-toggler-icon">
                 </span>
@@ -67,24 +62,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarMenu">
-                <ul class="nav nav-links ml-auto flex-nowrap">
 
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="https://github.com/" id="social-icons" tabindex="-1"
-                            aria-disabled="true">
-                            <img src="https://cdn.iconfinder.com/stored_data/711523/128/png?token=1668324329-WFO4PPHCFBZbjbVcoHLkuIqmpUeWFU3STmiM1nPyyv4%3D"
-                                alt="bootstrap" width="30" height="30">
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </nav>
     </header>
 
     <main>
-        <div class="parallax" div>
-
+            <!-- *******************loader*************************************** -->
             <div class="content">
                 <img src="https://picsum.photos/200">
             </div>
@@ -95,7 +78,6 @@
         </div>
         <section class="animated animatedFadeInUp fadeInUp" id="home">
             <div class="inner">
-
                 <div class="homeStyled" id="heroContainer">
                     <h1>Hey! My name is</h1>
                     <div class="animated animatedFadeInUp fadeInUp">
@@ -109,27 +91,17 @@
                                 Coding Academy</a></p> to increase my
                         knowledge in web
                         development.</p>
-
-
                     </div>
-
-
                 </div>
-
                 <div id="hero">
                     <img class="aboutStyledPic"
                         src="https://media-exp1.licdn.com/dms/image/C5603AQEsWTdVqF67mQ/profile-displayphoto-shrink_200_200/0/1667977027047?e=1673481600&v=beta&t=hzqQiu33G8WTW8zVqyHRiBtLAnFgABqjqoyKDnE4Qt0"
                         alt="linkedIn-pic">
                 </div>
             </div>
-
-
         </section>
-
         <div id="pBgIMG" class="bgimg-2"></div>
-
         <section id="about" class="animated animatedFadeInUp fadeInUp">
-
             <div class="inner">
                 <div class="aboutStyled">
 
@@ -144,32 +116,22 @@
                         <li>CSS</li>
                         <li>Bootstrap</li>
                         <li>JavaScript</li>
-                    
+
                     </ul>
                 </div>
-
             </div>
             </div>
-
-
 
         </section>
         <div id="pBgIMG" class="bgimg-3"></div>
-
-
-
-
-
         <section id="resume" class="animated animatedFadeInUp fadeInUp">
-
-
             <div class="inner">
                 <div class="jobsStyled">
                     <h2 class="numbered-heading">Where I’ve Worked</h2>
                     <div class="tab" id="buttons">
-                        <button class="tablinks active" onclick="openJob(event, 'US Army')">Military</button>
-                        <button class="tablinks" onclick="openJob(event, 'TenTen')">TenTen</button>
-                        <button class="tablinks" onclick="openJob(event, 'Paralegal')">Paralegal</button>
+                        <button id="btn1" class="tablinks active" onclick="openJob(event, 'US Army')">Military</button>
+                        <button id="btn2" class="tablinks" onclick="openJob(event, 'TenTen')">TenTen</button>
+                        <button id="btn3" class="tablinks" onclick="openJob(event, 'Paralegal')">Paralegal</button>
                     </div>
                     <!-- Tab content -->
                     <div id="US Army" class="tabcontent">
@@ -179,8 +141,8 @@
                             quickly rose to a leadership positition and I'm looking to make a transiton from a
                             successful time in service. What I gained from it all was :</p>
                         <li>Project Management</li>
-                        <li>Team Leader</li>
-                        <li>Trained in cross-cultural communication</li>
+                        <li>Leadership</li>
+                        <li>Cross-cultural communication</li>
                         <li>Critical Thinking</li>
                         <li>Quick Learner</li>
                         <li>Weapons Training</li>
@@ -201,10 +163,11 @@
                     <div id="Paralegal" class="tabcontent">
                         <h3>Paralegal</h3>
                         <p>Prior to my time in the military, I served as a paralegal for my father's law office. Which
-                            is a website I'm also developing! The majority of the work I did in this time of my life was mainly administrative.</p>
-                            <li>Phone Reception</li>
-                            <li>Excel Spreadhseets</li>
-                            <li>Power-Point</li>
+                            is a website I'm also developing! The majority of the work I did in this time of my life was
+                            mainly administrative.</p>
+                        <li>Phone Reception</li>
+                        <li>Excel Spreadhseets</li>
+                        <li>Power-Point</li>
                     </div>
                 </div>
             </div>
@@ -218,37 +181,41 @@
                     <h2 class="title">Get In Touch</h2>
                     <p>My inbox is always open. Whether you
                         have a question or just want to say hi, I’ll try my best to get back to you!</p><a
-                        class="email-link" href="mailto:roblesnoe1030@gmail.com"
-                        target="#sHello">Say
+                        class="email-link" href="mailto:roblesnoe1030@gmail.com" target="#sHello">Say
                         Hello</a>
                 </div>
             </div>
 
         </section>
         <footer>
-            <nav class="navbar fixed-bottom navbar-dark">
+            <nav id="nBarAnchor" class="navbar fixed-bottom justify-content-center navbar-dark" data-target="#navbarNav"
+                aria-expanded="false" aria-controls="navbarNav">
 
-                <div class="navbar flex-column gx-0" id="footerNav">
+                <div class="navbar" id="navbarNav">
 
-                    <a class="nav-link" href="https://twitter.com/" id="social-icons">
+                    <a class="nav-item nav-link active" href="https://twitter.com/" id="social-icons">
                         <img src="https://cdn.iconfinder.com/stored_data/711518/128/png?token=1668323570-uqPlsG44SErsv8NI3L83mnS%2FGkQSXldJAJyX9SkWRUA%3D"
                             alt="bootstrap" width="30px" height="30px">
                     </a>
 
 
-                    <a class="nav-link" href="https://open.spotify.com/user/12127914974" id="social-icons">
+                    <a class="nav-item nav-link" href="https://open.spotify.com/user/12127914974" id="social-icons">
                         <img src="https://cdn.iconfinder.com/stored_data/711521/128/png?token=1668324063-Vf5Mp9h328HySWKWm67UHaISAKPBLiuulYcGVgnmflo%3D"
                             alt="bootstrap" width="30px" height="30px">
                     </a>
 
 
-                    <a class="nav-link" href="https://discord.com/" id="social-icons">
+                    <a class="nav-item nav-link" href="https://discord.com/" id="social-icons">
                         <img src="https://cdn.iconfinder.com/stored_data/711524/128/png?token=1668324497-lbfvsHf9ji7mrVxXghzKBj1T5Gb4vvhnl5XQ%2Bsmj2qI%3D"
                             class="nav-item" width="30px" height="30px">
-                        <a class="nav-link" href="https://github.com/" id="social-icons">
+                        <a class="nav-item nav-link" href="https://github.com/" id="social-icons">
                             <img src="https://cdn.iconfinder.com/stored_data/711523/128/png?token=1668324329-WFO4PPHCFBZbjbVcoHLkuIqmpUeWFU3STmiM1nPyyv4%3D"
                                 alt="bootstrap" width="30px" height="30px"></a>
-
+                        <a href="https://www.linkedin.com/in/noe-robles-11899b60/"
+                            class="nav-item nav-link disabled"><img
+                                src="https://cdn.iconfinder.com/stored_data/711517/128/png?token=1668323511-qrpBWk4PozUvHGe6isFOPuTpVOjcvnyDM9LUntLjP4s%3D"
+                                alt="bootstrap" width="30" height="30">
+                        </a>
 
                 </div>
 
@@ -258,21 +225,6 @@
 
     </footer>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -283,11 +235,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-
-
     <script src="scrpipt.js"></script>
-
-
 
 </body>
 

@@ -1,3 +1,5 @@
+// ********************variables to for content and loader followed by function init()*************************//////
+
 const loader = document.querySelector('.loader-wrapper')
 const content = document.querySelector('.content')
 const main = document.querySelector('.pages')
@@ -22,6 +24,8 @@ function init() {
 init();
 
 
+// **********************this is to display the tabs for the resume portion*********************//
+
 function openJob(evt, jobName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -42,19 +46,6 @@ function openJob(evt, jobName) {
   document.getElementById(jobName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("_navBar").style.top = "0";
-  } else {
-    document.getElementById("_navBar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-
 
 
 
