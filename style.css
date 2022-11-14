@@ -1,7 +1,5 @@
-body {
-    background: #242f3f;
-    overflow: hidden;
-}
+
+
 
 .content {
 
@@ -85,7 +83,7 @@ body {
 
     0% {
         transform: translateX(-100%);
-       
+
     }
 
     100% {
@@ -122,9 +120,15 @@ body {
 
 body {
     height: 100%;
-    overflow: scroll;
+  
     -webkit-overflow-scrolling: touch;
     -webkit-overflow-scrolling: scroll;
+
+    background: #242f3f;
+    overflow: hidden;
+
+
+
 }
 
 
@@ -153,18 +157,18 @@ body {
 
 header {
 
-  
+
     animation: 2s ease-out 0s 1 slideInLeft;
     animation-delay: 3s;
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     z-index: 10;
 }
 
 #_navBar {
-    
+
     top: 0;
     position: fixed;
     /* Make it stick/fixed */
@@ -185,9 +189,17 @@ footer {
 }
 
 #_navBar a:hover {
-    background-color: #ddd;
+    background-color: #06d6a0;
+    border-radius: 10px;
 }
 
+
+#footerNav a:hover {
+    background-color: #06d6a0;
+    border-radius: 10px;
+}
+
+/* 
 
 .line-1 {
     height: 200px;
@@ -196,7 +208,7 @@ footer {
     background-color: #06d6a0;
     margin-left: 23px;
 
-}
+} */
 
 
 #parallax {
@@ -235,6 +247,15 @@ footer {
     max-height: 600px;
 }
 
+@media only screen and (max-device-width: 1366px) {
+
+    .parallax,
+    #pBgIMG {
+        display: none;
+    }
+}
+
+
 .aboutStyledPic {}
 
 .column {
@@ -250,22 +271,19 @@ footer {
 
 .navbar-dark .navbar-toggler {
     border: 1px;
-    color: #fff;
+    color: #06d6a0;
 }
 
-.navbar {
-    padding: 3px 10px
-}
 
 
 body {
     margin: 0px;
     width: 100%;
     min-height: 100%;
-    background-color: rgb(0, 0, 0);
+
     color: white;
     line-height: 1.3;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 main.fillHeight {
@@ -285,13 +303,14 @@ main {
 section {
     margin: 0 auto;
     margin-top: 100px;
-    min-width: fit-content;
     padding-top: 170px;
-    padding-right: 80px;
+    padding-right: 400px;
+    padding-left: 400px;
     padding-bottom: 30px;
-    padding-left: 80px;
+
     min-height: 100vh;
     text-align: left;
+    justify-content: center;
 }
 
 
@@ -300,7 +319,7 @@ section {
 .inner .aboutStyled,
 .inner .contactStyled {
     box-shadow: 0 20px 30px -15px #f72585;
-    padding: 10px;
+    padding: 5%;
 }
 
 .tab {
@@ -337,7 +356,7 @@ section {
 }
 
 .aboutStyledPic {
-
+    box-shadow: 0 20px 30px -15px #f72585;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -346,16 +365,22 @@ section {
     align-self: center;
 }
 
+#hero {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 20px;
+
+}
 
 
 
 .inner {
-
-    max-width: 2000px;
+    min-height: 60vh;
     border-radius: 10px;
     padding: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 20px;
     background-color: #023047;
     box-shadow: 15px 20px 30px -15px #06d6a0;
@@ -415,35 +440,45 @@ button.tablinks {
     box-sizing: inherit;
 }
 
+
+
+
+
 /* ****Start of Tablet Media Query****** */
 
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
 
+    body {
+        font-size: 15px;
+    }
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        display: none;
+    }
+
     #footerNav {
         padding-left: 10px;
-        padding-bottom: 100px;
+       
 
     }
 
 
     section {
 
-
+        padding: 10%;
         min-height: 100vh;
         max-height: min-content;
     }
 
-    .aboutStyled {
-        margin: auto;
 
-    }
 
 
     .inner {
-        width: auto;
+        min-height: 50vh;
         margin-top: 50px;
-        min-height: fit-content;
 
     }
 
@@ -462,20 +497,37 @@ button.tablinks {
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
     /* your css rules for ipad portrait */
 
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        display: none;
+    }
+
+
     section {
+
+
+
+
+        padding: 10%;
+        min-height: 100vh;
+        max-height: min-content;
+
+
         margin-right: 5px;
     }
 
     .inner {
-        width: 200px
+
+
+
+        min-height: 50vh;
+        margin-top: 50px;
+
+
     }
 
-}
-
-
-
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
-    /* your css rules for ipad landscape */
 }
 
 
@@ -487,16 +539,100 @@ button.tablinks {
 }
 
 
+@media (max-width:1024px) {
+    section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1200px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+    /* your css rules for ipad landscape */
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        display: none;
+    }
+
+
+    section {
+
+
+
+
+        padding: 10%;
+        min-height: 100vh;
+        max-height: min-content;
+
+
+        margin-right: 5px;
+    }
+
+    .inner {
+
+
+
+        min-height: 50vh;
+        margin-top: 50px;
+
+
+    }
+
+}
+
+
+
+@media (min-width:576px) {
+    #mobileLinks {
+        display: none;
+    }
+}
+
+
+
+@media (min-width:300px) {
+    section {
+      
+        width:100%;
+    }
+}
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+
+    .aboutStyledPic img {
+        width: 100%;
+        height: 100%;
+   }
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        display: none;
+
+    }
+
     .navbar {
         font-size: smaller;
     }
 
-    #footerNav {
-        padding-left: 10px;
-        padding-bottom: 100px;
-
-    }
 
     h1 {
         font-size: clamp(10px, 4vw, 20px);
@@ -515,7 +651,9 @@ button.tablinks {
 
     section {
 
-
+        padding-left: 12px;
+        ;
+        padding-right: 12px;
         min-height: 100vh;
         max-height: min-content;
     }
@@ -545,13 +683,21 @@ button.tablinks {
 
 @media (max-width:300px) {
 
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        display: none;
+    }
+
+    .aboutStyledPic {}
+
     #footerNav {
         display: none;
     }
 
     section {
 
-        padding: 5%;
+        padding: 1%
     }
 
     h3.big-heading {
@@ -569,6 +715,7 @@ button.tablinks {
     }
 
     .inner {
-        width: auto;
+        padding: 5%;
+        font-size: smaller
     }
 }

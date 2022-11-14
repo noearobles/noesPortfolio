@@ -43,15 +43,18 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-// var lastScrollTop;
-// navbar = document.getElementById('_navBar');
-// window.addEventListener('scroll',function(){
-// var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-// if(scrollTop > lastScrollTop){
-// navbar.style.top='-80px';
-// }
-// else{
-// navbar.style.top='0';
-// }
-// lastScrollTop = scrollTop;
-// });
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("_navBar").style.top = "0";
+  } else {
+    document.getElementById("_navBar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+
+
