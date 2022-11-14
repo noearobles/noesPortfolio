@@ -124,7 +124,6 @@ main {
     width: 100%;
     border-radius: 10px;
     padding: 20px;
-
     background-color: #023047;
     box-shadow: 15px 20px 30px -15px #06d6a0;
 }
@@ -163,8 +162,7 @@ main {
 
 .inner .homeStyled,
 .inner .jobsStyled,
-.inner .aboutStyled,
-.inner .contactStyled {
+.inner .aboutStyled .inner .contactStyled {
     box-shadow: 0 20px 30px -15px #f72585;
     padding: 5%;
 }
@@ -342,7 +340,7 @@ button.tablinks {
 }
 
 .content {
-
+    background-color: #001219;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -554,10 +552,10 @@ button.tablinks {
 
     }
 
-    .tab button{
+    .tab button {
         display: inline-block;
         font-size: smaller;
-       
+
     }
 }
 
