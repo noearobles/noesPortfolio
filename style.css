@@ -376,7 +376,7 @@ button.tablinks {
 
 
 .animated {
-    /* animation-delay: 4s; */
+    animation-delay: 4s;
     animation-duration: 2s;
     animation-fill-mode: both;
     -webkit-animation-duration: 2s;
@@ -559,12 +559,7 @@ button.tablinks {
         font-size: smaller;
        
     }
-
-
-
 }
-
-
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
 
