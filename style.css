@@ -323,20 +323,19 @@ section {
 }
 
 .tab {
-    width: 100%;
-    height: 100%;
-    padding: 0 !important;
+  
 }
 
 .tab .tablinks {
     background-color: transparent;
     width: min-content;
-    border: none;
+    
     outline: none;
     text-align: center;
     cursor: pointer;
     background-color: #023047;
     color: #06d6a0;
+    border-color: #001219
     box-shadow: 0 20px 30px -15px #f72585;
 }
 
@@ -352,7 +351,7 @@ section {
 .skills-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-width: auto;
+   
 }
 
 .aboutStyledPic {
@@ -617,6 +616,15 @@ button.tablinks {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
 
+#footerNav{
+    display: none;
+}
+
+button.tablinks {
+    box-shadow: 0 20px 30px -15px #f72585;
+    border-radius: 10px;
+}
+
     .aboutStyledPic img {
         width: 100%;
         height: 100%;
@@ -672,6 +680,7 @@ button.tablinks {
         padding: 20px;
         overflow-wrap: normal;
         min-height: auto;
+        font-size: small;
     }
 
 
