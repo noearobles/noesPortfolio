@@ -359,15 +359,13 @@ button.tablinks {
 }
 
 
-/* .loader { */
-/* *********keep for later********* */
-
-/* /* width: 30px;
-    height: 30px; */
-/* border-radius: 10%;
+.loader {
+    width: 30px;
+    height: 30px;
+    background-repeat: 10%;
     border: 4px solid #06d6a0;
-    animation: loader 2s infinite ease;  */
-/* } */
+    animation: loader 2s infinite ease;
+}
 
 .loader-wrapper {
     width: 100%;
