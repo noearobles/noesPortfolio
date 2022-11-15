@@ -155,13 +155,6 @@ main.fillHeight {
     padding: 0px 150px;
 }
 
-main {
-    background-color: #001219;
-    align-items: center;
-    width: 100%;
-    overflow-y: scroll;
-
-}
 
 #home {}
 
@@ -556,6 +549,9 @@ button.tablinks {
 
     }
 
+.jobsStyled{
+    height: fit-content;
+}
 
     .tab .tablinks {
         text-align: center;
