@@ -107,7 +107,6 @@ section {
 
 .inner {
     width: 800px;
-    ;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
@@ -120,6 +119,9 @@ section {
     transform: translateY(-50%);
 }
 
+.jobsStyled{
+    height:560px;
+}
 
 .homeStyled,
 .jobsStyled,
@@ -211,7 +213,7 @@ main {
 
 
 .aboutStyledPic {
-    box-shadow: 0 20px 30px -15px #f72585;
+    box-shadow: 0 10px 30px -15px #06d6a0;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -503,14 +505,6 @@ button.tablinks {
         display: none;
     }
 
-
-    h1 {}
-
-    h3.big-heading {}
-
-    h2.big-heading {}
-
-
 }
 
 
@@ -544,7 +538,10 @@ button.tablinks {
     .tab button {
         display: inline-block;
         font-size: smaller;
-
+        width: fit-content;
+        border-radius: 5px;
+    
+    
     }
 }
 
