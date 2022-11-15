@@ -359,13 +359,15 @@ button.tablinks {
 }
 
 
-.loader {
-    width: 30px;
-    height: 30px;
-    border-radius: 10%;
+/* .loader { */
+/* *********keep for later********* */
+
+/* /* width: 30px;
+    height: 30px; */
+/* border-radius: 10%;
     border: 4px solid #06d6a0;
-    animation: loader 2s infinite ease;
-}
+    animation: loader 2s infinite ease;  */
+/* } */
 
 .loader-wrapper {
     width: 100%;
@@ -496,6 +498,7 @@ button.tablinks {
 @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
     /* your css rules for ipad landscape */
 
+
     .bgimg-1,
     .bgimg-2,
     .bgimg-3 {
@@ -522,6 +525,10 @@ button.tablinks {
 
 
 @media (max-width:576px) {
+
+    .jobsStyled {
+        height: 550px;
+    }
 
     #nBarAnchor {
         display: none;
@@ -552,9 +559,6 @@ button.tablinks {
 
     }
 
-    .jobsStyled {
-        height: fit-content;
-    }
 
     .tab .tablinks {
         text-align: center;
