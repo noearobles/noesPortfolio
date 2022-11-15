@@ -78,7 +78,7 @@ footer {
 
 
 body {
-    color: azure;
+    color: gainsboro;
     height: 100%;
     background-color: #001219;
     -webkit-overflow-scrolling: touch;
@@ -103,7 +103,11 @@ section {
     text-align: left;
 }
 
-
+.underLine {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #06d6a0;
+}
 
 .inner {
     width: 800px;
@@ -119,8 +123,8 @@ section {
     transform: translateY(-50%);
 }
 
-.jobsStyled{
-    height:560px;
+.jobsStyled {
+    height: 560px;
 }
 
 .homeStyled,
@@ -530,11 +534,10 @@ button.tablinks {
 
     .tab button {
         display: inline-block;
-        font-size: smaller;
         width: fit-content;
         border-radius: 5px;
-    
-    
+
+
     }
 }
 
@@ -549,9 +552,9 @@ button.tablinks {
 
     }
 
-.jobsStyled{
-    height: fit-content;
-}
+    .jobsStyled {
+        height: fit-content;
+    }
 
     .tab .tablinks {
         text-align: center;
