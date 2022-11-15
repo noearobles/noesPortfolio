@@ -106,6 +106,8 @@ section {
 
 
 .inner {
+    width: 800px;
+    ;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
@@ -125,8 +127,6 @@ section {
 .contactStyled {
     box-shadow: 0 20px 30px -15px #f72585;
     padding: 5%;
-    min-width: auto;
-    max-width: 750px;
 }
 
 .column {
@@ -442,7 +442,7 @@ button.tablinks {
         display: none;
     }
 
-  
+
 
 }
 
@@ -455,7 +455,6 @@ button.tablinks {
     }
 }
 
-/* ****Start of Tablet Media Query****** */
 
 @media screen and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
 
@@ -485,8 +484,13 @@ button.tablinks {
 
 /****************your css rules for ipad portrait *********************/
 
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {}
+@media all and (max-device-width: 800px) {
 
+    .inner {
+        width: 300px;
+    }
+
+}
 
 
 
