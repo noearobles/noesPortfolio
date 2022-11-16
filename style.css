@@ -95,12 +95,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    max-height: 1000vh;
-    min-height: 100vh;
+    height: 100vh;
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: left;
+    scroll-snap-align: start;
 }
 
 .underLine {
@@ -123,17 +123,36 @@ section {
     transform: translateY(-50%);
 }
 
+/* 
 .jobsStyled {
     height: 560px;
+} */
+
+
+.portfolioStyled {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+
 }
 
 .homeStyled,
 .jobsStyled,
 .aboutStyled,
+.portfolioStyled,
 .contactStyled {
     box-shadow: 0 20px 30px -15px #f72585;
     padding: 5%;
 }
+
+
+.cards {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
 
 .column {
     flex-direction: column;
@@ -159,27 +178,88 @@ main.fillHeight {
     padding: 0px 150px;
 }
 
+.flip-card h3.big-heading {
+    font-style: 10px;
+    padding: 0px;
+}
 
-#home {}
 
-#hero {
-    display: flex;
-    justify-content: center;
+.flip-card {
 
-    padding-top: 20px;
+    background-color: transparent;
+    width: 200px;
+    height: 100px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.flip-card img {
+    width: 80px;
+    height: 80px;
 
 }
+
+
+.flip-card-front,
+.flip-card-back {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #023047;
+    color: white;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.flip-card-back img {
+
+    border-radius: 4px;
+    box-shadow: 0 20px 30px -15px #06d6a0;
+
+}
+
 
 
 #contact .inner {
     padding-bottom: 50px;
 }
 
+
+
+#hero {
+    display: flex;
+    flex-direction: column;
+}
+
 .inner .homeStyled,
 .inner .jobsStyled,
-.inner .aboutStyled .inner .contactStyled {
+.inner .portfolioStyled,
+.inner .aboutStyled,
+.inner .contactStyled {
     box-shadow: 0 20px 30px -15px #f72585;
     padding: 5%;
+
 }
 
 .tablinks {
@@ -458,7 +538,7 @@ button.tablinks {
 @media screen and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
 
     body {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     section {
@@ -489,6 +569,11 @@ button.tablinks {
         width: 300px;
     }
 
+    .cards {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
@@ -551,6 +636,26 @@ button.tablinks {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
 
+    .portfolioStyled {
+        display: inline-block;
+    }
+
+
+    .flip-card {
+
+
+        width: 20px;
+        height: 20px;
+
+    }
+
+
+    img {
+        width: 40px;
+        height: 40px;
+
+    }
+
     button.tablinks {
         padding: 0;
         box-shadow: 0 20px 30px -15px #f72585;
@@ -587,6 +692,7 @@ button.tablinks {
 
     .homeStyled,
     .jobsStyled,
+    .portfolioStyled,
     .aboutStyled,
     .contactStyled {
         box-shadow: 0 20px 30px -15px #f72585;
