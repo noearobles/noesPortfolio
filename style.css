@@ -123,10 +123,6 @@ section {
     transform: translateY(-50%);
 }
 
-/* 
-.jobsStyled {
-    height: 560px;
-} */
 
 
 .portfolioStyled {
@@ -610,9 +606,7 @@ button.tablinks {
 
 @media (max-width:576px) {
 
-    .jobsStyled {
-        height: 550px;
-    }
+
 
     #nBarAnchor {
         display: none;
@@ -623,12 +617,15 @@ button.tablinks {
 
     }
 
+    .tab {
+        display: flex;
+        flex-direction: column;
+    }
+
     .tab button {
-        display: inline-block;
+
         width: fit-content;
         border-radius: 5px;
-
-
     }
 }
 
@@ -637,19 +634,29 @@ button.tablinks {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
 
+
+    .inner {
+        width: 250px;
+    }
+
     .cards {
-        padding-top: 5px;
+   
         display: flex;
         flex-direction: column;
         gap: 5px;
     }
 
 
-    img {
-        width: 40px;
-        height: 40px;
-
+    .flip-card-back{
+        display: flex;
+        justify-content: space-evenly;
     }
+    .aboutStyledPic {
+        width: 100px;
+        height: 100px;
+    }
+
+ 
 
     button.tablinks {
         padding: 0;
@@ -707,6 +714,41 @@ button.tablinks {
 }
 
 @media (max-width:300px) {
+
+    .inner {
+        width: 150px;
+    }
+
+    .flip-card {
+     
+        width: 100px;
+        height: 50px;
+    }
+
+.flip-card-back{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    .flip-card img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .flip-card-back img {
+        width: 30px;
+        height: 30px;
+      
+    }
+
+    .cards {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 20px;
+    }
 
 
     #footerNav {
