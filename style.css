@@ -674,6 +674,12 @@ main.fillHeight {
 
     }
 
+
+    .navbar-toggler {
+        padding: 0px;
+
+    }
+
     .flip-card img {
         width: 40px;
         height: 40px;
@@ -686,7 +692,7 @@ main.fillHeight {
     }
 
     .inner {
-        width: 70%;
+        width: 80%;
         height: fit-content;
     }
 
@@ -736,9 +742,9 @@ main.fillHeight {
         border-radius: 4px;
     }
 
-.nav-item{
-    padding-right: 8px;
-}
+    .nav-item {
+        padding-right: 8px;
+    }
 
     #_navBar img:hover {
         background-color: unset;
