@@ -735,6 +735,10 @@ main.fillHeight {
         border-radius: 4px;
     }
 
+.nav-item{
+    padding-right: 8px;
+}
+
     #_navBar img:hover {
         background-color: unset;
         box-shadow: 15px 20px 30px -15px #3b28cc;
