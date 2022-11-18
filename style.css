@@ -18,6 +18,7 @@ header {
     color: #06d6a0;
 }
 
+
 #_navBar {
 
     top: 0;
@@ -25,7 +26,6 @@ header {
     /* Make it stick/fixed */
     width: 100%;
     /* Full width */
-    transition: top 0.3s;
     z-index: 1000;
     /* Transition effect when sliding down (and up) if desired */
 }
@@ -42,80 +42,107 @@ header {
 }
 
 
+
 #_navBar a {
-    float: right;
     color: white;
-    text-align: center;
-    padding: 15px;
+    text-align: end;
+
 }
 
+#social-icons img {
+    height: 200px;
+}
 
-#_navBar a:hover {
-    background-color: #06d6a0;
+#social-icons img:hover {
+    background-color: #081c15;
+    box-shadow: 15px 20px 30px -15px #3b28cc;
     border-radius: 10px;
 }
 
 
-#footerNav {
-    width: auto;
 
-}
-
-footer {
-    position: fixed;
-    z-index: 10;
-}
-
-
-#footerNav a:hover {
-    background-color: #06d6a0;
-    border-radius: 10px;
-}
 
 /* *********************END OF NAVIGATION*************************** */
 
 /* ************************BODY***************************************** */
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
+    height: 100%;
+    width: 100%;
     color: gainsboro;
     height: 100%;
-    background-color: #001219;
+    background-color: #0c0f0a;
     -webkit-overflow-scrolling: touch;
     -webkit-overflow-scrolling: scroll;
     background: #242f3f;
     overflow: hidden;
-    width: 100%;
-    min-height: 100%;
     line-height: 1.3;
-    font-size: 20px;
+    font-size: 80px;
 }
 
 section {
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    height: 100vh;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: left;
-    scroll-snap-align: start;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    max-height: fit-content;
 }
 
-.underLine {
-    text-decoration-line: underline;
+
+h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(10px, 8vw, 100px);
     text-decoration-thickness: 1px;
-    text-decoration-color: #06d6a0;
 }
+
+
+h1 {
+    font-size: 80px;
+}
+
+h2.big-heading {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(10px, 8vw, 200px);
+    text-decoration-thickness: 1px;
+    color: #06d6a0;
+}
+
+h3 {
+    font-size: clamp(10px, 8vw, 80px);
+    font-weight: bolder;
+    margin-top: 10px;
+    line-height: 1.3;
+    color: gainsboro;
+}
+
+h3.big-heading {
+    font-size: clamp(10px, 8vw, 160px);
+    margin-top: 10px;
+    line-height: 1.3;
+    color: #06d6a0;
+}
+
+
+button {
+
+    width: fit-content;
+    border-radius: 5px;
+}
+
+
 
 .inner {
-    width: 800px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 80%;
+    height: fit-content;
     border-radius: 10px;
-    padding: 20px;
-    background-color: #023047;
+    padding: 3%;
+    background-color: #081c15;
     box-shadow: 15px 20px 30px -15px #06d6a0;
     position: absolute;
     top: 50%;
@@ -123,30 +150,55 @@ section {
     transform: translateY(-50%);
 }
 
+#hero {
 
-
-.portfolioStyled {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 5px;
-
+    display: flex;
+    justify-content: center;
 }
+
+.aboutStyledPic {
+    padding: 1%;
+    box-shadow: 0 10px 30px -15px #06d6a0;
+    height: 650px;
+    width: 650px;
+    border-radius: 50%;
+    border-width: 10px;
+    border-color: #0f4c5c;
+}
+
+
 
 .homeStyled,
 .jobsStyled,
 .aboutStyled,
 .portfolioStyled,
 .contactStyled {
-    box-shadow: 0 20px 30px -15px #f72585;
+    height: fit-content;
     padding: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 20px 30px -15px #3b28cc;
 }
 
 
-.cards {
-    padding-top: 5px;
+#buttons.tab {
     display: flex;
-    justify-content: center;
+}
+
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+
+
+
+
+.cards {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
     gap: 10px;
 }
 
@@ -162,9 +214,8 @@ main.fillHeight {
 }
 
 main {
-    background-color: #001219;
+    background-color: #0c0f0a;
     align-items: center;
-
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
@@ -175,6 +226,13 @@ main.fillHeight {
     padding: 0px 150px;
 }
 
+
+
+#social-icons img {
+    width: 100px;
+    height: 100px;
+}
+
 .flip-card h3.big-heading {
     font-style: 10px;
     padding: 0px;
@@ -182,15 +240,14 @@ main.fillHeight {
 
 
 .flip-card {
-
-    background-color: transparent;
-    width: 200px;
-    height: 100px;
+    box-shadow: 0 20px 30px -15px #06d6a0;
+    background-color: #0c0f0a;
+    width: 600px;
+    height: 300px;
     perspective: 1000px;
 }
 
 .flip-card-inner {
-
     position: relative;
     width: 100%;
     height: 100%;
@@ -203,25 +260,25 @@ main.fillHeight {
     transform: rotateY(180deg);
 }
 
-
 .flip-card img {
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 200px;
 
 }
-
 
 .flip-card-front,
 .flip-card-back {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 60px;
     width: 100%;
     height: 100%;
     padding: 1%;
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background-color: #023047;
+    background-color: #081c15;
     color: white;
 }
 
@@ -232,50 +289,30 @@ main.fillHeight {
 .flip-card-back img {
 
     border-radius: 4px;
-    box-shadow: 0 20px 30px -15px #06d6a0;
+    box-shadow: 0 20px 30px -15px #3b28cc;
 
 }
-
-
-
-#contact .inner {
-    padding-bottom: 50px;
-}
-
-
 
 #hero {
-    display: flex;
-    flex-direction: column;
-}
-
-.inner .homeStyled,
-.inner .jobsStyled,
-.inner .portfolioStyled,
-.inner .aboutStyled,
-.inner .contactStyled {
-    box-shadow: 0 20px 30px -15px #f72585;
-    padding: 5%;
-
+    align-self: center;
 }
 
 .tablinks {
-    background-color: transparent;
-    outline: none;
+    font-size: smaller;
     text-align: center;
     cursor: pointer;
-    background-color: #023047;
-    color: #06d6a0;
-    border-color: #001219;
-    box-shadow: 0 20px 30px -15px #f72585;
-}
-
-.tablinks a:hover {
-    border-bottom: 1px solid transparent;
+    background-color: #081c15;
+    color: #fff;
+    border-color: #081c15;
+    padding: 1%;
+    box-shadow: 0 20px 30px -15px #3b28cc;
+    background-color: #081c15;
+    border-width: 10px;
+    border-radius: 4px;
 }
 
 .tablinks:hover {
-    background-color: #001219;
+    background-color: #0c0f0a;
 }
 
 .skills-list {
@@ -284,67 +321,9 @@ main.fillHeight {
 
 }
 
-
-
-.aboutStyledPic {
-    box-shadow: 0 10px 30px -15px #06d6a0;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border-width: 50px;
-    border-color: #001219;
-    align-self: center;
-}
-
-
-h1 {
-    margin: auto;
-}
-
-h2.big-heading {
-    margin: 0px;
-    font-size: clamp(40px, 8vw, 80px);
-}
-
-h2.numbered-heading {
-    margin: 10px 0px 40px;
-}
-
-.aboutStyled .numbered-heading {
-    margin: 0;
-}
-
-h3.big-heading {
-    margin-top: 10px;
-    line-height: 1.3;
-    font-size: 50px;
-    color: #06d6a0;
-}
-
-.big-heading {
-    margin: 0px;
-    font-size: clamp(10px, 8vw, 30px);
-}
-
-button.tablinks {
-
-    width: fit-content;
-    border-radius: 5px;
-}
-
-#buttons.tab {
-    display: flex;
-}
-
-::before,
-::after {
-    box-sizing: inherit;
-}
-
 /* ****************************END OF BODY*************************************** */
 
 /* ******************************ANIMATIONS************************************************** */
-
 
 @keyframes loader {
     0% {
@@ -426,8 +405,10 @@ button.tablinks {
     }
 }
 
+
+
 .content {
-    background-color: #001219;
+    background-color: #0f4c5c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -437,10 +418,10 @@ button.tablinks {
 
 
 .loader {
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
     background-repeat: 10%;
-    border: 4px solid #06d6a0;
+    border: 20px solid #06d6a0;
     animation: loader 2s infinite ease;
 }
 
@@ -451,7 +432,7 @@ button.tablinks {
     z-index: 99;
     top: 0;
     left: 0;
-    background-color: #001219;
+    background-color: #0c0f0a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -461,6 +442,7 @@ button.tablinks {
 
 
 .animated {
+    display: flex;
     animation-delay: 4s;
     animation-duration: 2s;
     animation-fill-mode: both;
@@ -499,114 +481,157 @@ button.tablinks {
 .bgimg-2,
 .bgimg-3 {
     position: relative;
-    opacity: 0.65;
+    opacity: 0.3;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 400px;
-    max-height: 600px;
+    height: 30vh;
 }
 
-/* **************************END OF PARALLAX ELEMENTS********************************************** */
+/* ********************************************************END OF PARALLAX********************************************************************************************* */
 
 
-/* ******************MEDIA QUERIES**************************** */
-
-@media only screen and (max-device-width: 1366px) {
-    #pBgIMG {
-        display: none;
-    }
+/* ********************************************************MEDIA QUERIES************************************************************************ */
 
 
-
-}
-
-@media only screen and (max-device-width: 1024px) {
-
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
-
-
-@media screen and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-
-    body {
-        font-size: 20px;
-    }
-
-    section {
-
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    h3.big-heading {
-        font-size: 35px;
-    }
-
-    h2.big-heading {
-        margin: 0px;
-        font-size: clamp(20px, 6vw, 40px);
-    }
-}
-
-/****************your css rules for ipad portrait *********************/
-
-@media all and (max-device-width: 800px) {
-
-    .inner {
-        width: 300px;
-    }
-
-    .cards {
-        padding-top: 5px;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-
-
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
-    /* your css rules for ipad landscape */
-
-
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        display: none;
-    }
-
-}
-
-
-
-@media all and (device-width: 1200px) {
-    h2.big-heading {
-        font-size: 40px;
-    }
-}
-
-@media (min-width:576px) {
+@media (min-width:766px) {
     #mobileLinks {
         display: none;
     }
 
 }
 
+@media (max-width:766px) {
+    #social-icons {
+        display: none;
+    }
 
+}
+
+
+@media only screen and (max-device-width: 1600px) {
+
+
+    #pBgIMG {
+        display: none;
+    }
+
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+
+}
+
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+
+
+    .flip-card {
+
+        width: 650px;
+        height: 350px;
+
+    }
+
+
+
+}
+
+
+
+@media screen and (min-device-width: 576px) and (max-device-width: 1200px) {
+    body {
+        font-size: 60px;
+    }
+
+
+    .flip-card {
+
+        width: 600px;
+        height: 300px;
+
+    }
+
+    .flip-card img {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    section {
+        position: relative;
+        height: 100vh;
+    }
+
+    .inner {
+        width: 60%;
+        height: 65%;
+    }
+
+
+    .aboutStyledPic {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2.big-heading {
+        margin: 0px;
+        font-size: clamp(10px, 20vw, 100px);
+    }
+
+
+    h2.title,
+    h3,
+    h3.big-heading {
+        font-size: clamp(10px, 8vw, 80px);
+        margin-top: 10px;
+        line-height: 1.3;
+        color: #06d6a0;
+    }
+
+
+    .big-heading {
+        margin: 0px;
+        font-size: clamp(10px, 8vw, 20px);
+    }
+
+
+
+}
 
 @media (max-width:576px) {
 
+    .tab {
+        display: flex;
+        flex-direction: column;
+    }
 
+
+    .cards {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        gap: 10px
+    }
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        display: none;
+    }
 
     #nBarAnchor {
         display: none;
@@ -619,7 +644,6 @@ button.tablinks {
 
     .tab {
         display: flex;
-        flex-direction: column;
     }
 
     .tab button {
@@ -629,160 +653,198 @@ button.tablinks {
     }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation:portrait) {
 
-
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-
-
-    .inner {
-        width: 250px;
+    body {
+        font-size: 15px;
     }
 
     .cards {
-   
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+        align-self: center;
     }
 
+    .flip-card {
 
-    .flip-card-back{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .aboutStyledPic {
         width: 100px;
-        height: 100px;
-    }
-
- 
-
-    button.tablinks {
-        padding: 0;
-        box-shadow: 0 20px 30px -15px #f72585;
+        height: 50px;
 
     }
 
+    .flip-card img {
+        width: 40px;
+        height: 40px;
 
-    .tab .tablinks {
-        text-align: center;
-        cursor: pointer;
-        background-color: rgb(2, 48, 71);
-        color: rgb(6, 214, 160);
     }
 
-    .navbar {
-        font-size: smaller;
+    section {
+        position: relative;
+        height: 100vh;
+    }
+
+    .inner {
+        width: 70%;
+        height: fit-content;
+    }
+
+
+    .aboutStyledPic {
+        height: 100%;
+        width: 100%;
     }
 
 
     h1 {
-        font-size: clamp(20px, 50vw, 10px);
+        font-size: 20px;
     }
 
     h2.big-heading {
-
-        font-size: clamp(40px, 60vw, 12px);
+        margin: 0px;
+        font-size: clamp(10px, 20vw, 20px);
     }
 
 
+    h2.title,
+    h3,
     h3.big-heading {
-        font-size: 30px;
+        font-size: clamp(10px, 8vw, 20px);
+        margin-top: 10px;
+        line-height: 1.3;
+        color: #06d6a0;
     }
 
 
-    .homeStyled,
-    .jobsStyled,
-    .portfolioStyled,
-    .aboutStyled,
-    .contactStyled {
-        box-shadow: 0 20px 30px -15px #f72585;
-        padding: 20px;
-        font-size: small;
+    .big-heading {
+        margin: 0px;
+        font-size: clamp(10px, 8vw, 20px);
     }
 
+    .tablinks {
+        font-size: smaller;
+        text-align: center;
+        cursor: pointer;
+        background-color: #081c15;
+        color: #fff;
+        border-color: #081c15;
+        padding: 1%;
+        box-shadow: 0 20px 30px -15px #3b28cc;
+        background-color: #081c15;
+        border-width: 2px;
+        border-radius: 4px;
+    }
 
-
-
+    #_navBar img:hover {
+        background-color: unset;
+        box-shadow: 15px 20px 30px -15px #3b28cc;
+        border-radius: 10px;
+    }
 }
 
-@media (max-width:576) {
-    #nBarAnchor {
-        display: none;
-    }
-}
+@media only screen and (min-device-width: 375px) and (max-device-width: 900px) and (orientation:landscape) {
 
-@media (max-width:300px) {
 
-    .inner {
-        width: 150px;
-    }
 
-    .flip-card {
-     
-        width: 100px;
-        height: 50px;
-    }
 
-.flip-card-back{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-    .flip-card img {
-        width: 50px;
-        height: 50px;
-
-    }
-
-    .flip-card-back img {
-        width: 30px;
-        height: 30px;
-      
+    body {
+        font-size: 15px;
     }
 
     .cards {
-        padding-top: 5px;
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        width: 20px;
+        align-self: center;
+     padding-top: 5px;
     }
 
+    .flip-card {
 
-    #footerNav {
-        display: none;
+        width: 100px;
+        height: 50px;
+
     }
 
-    .aboutStyledPic {
-        display: none;
+    .flip-card img {
+        width: 40px;
+        height: 40px;
+
     }
+
+.flip-card-front,
+.flip-card-back{
+    gap: 10px;
+}
 
     section {
-        font-size: smaller;
-        padding: 1%
-    }
-
-    .skills-list {
-        display: unset;
-    }
-
-    h2.numbered-heading {
-        font-style: 10px;
-    }
-
-    h3.big-heading {
-        font-size: 10px;
-    }
-
-    h2.big-heading {
-        font-size: 1.5rem;
+        position: relative;
+        height: 100vh;
     }
 
     .inner {
-
-        padding: 5%;
-        font-size: smaller
+        width: 80%;
+        height: 90%;
     }
+
+
+    .aboutStyledPic {
+        height: 100px;
+        width: 100px;
+    }
+
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2.big-heading {
+        margin: 0px;
+        font-size: clamp(10px, 20vw, 20px);
+    }
+
+
+    h2.title,
+    h3,
+    h3.big-heading {
+        font-size: clamp(10px, 8vw, 20px);
+        margin-top: 10px;
+        line-height: 1.3;
+        color: #06d6a0;
+    }
+
+
+    .big-heading {
+        margin: 0px;
+        font-size: clamp(10px, 8vw, 20px);
+    }
+
+    .tablinks {
+        font-size: smaller;
+        text-align: center;
+        cursor: pointer;
+        background-color: #081c15;
+        color: #fff;
+        border-color: #081c15;
+        padding: 1%;
+        box-shadow: 0 20px 30px -15px #3b28cc;
+        background-color: #081c15;
+        border-width: 2px;
+        border-radius: 4px;
+    }
+
+    #_navBar img:hover {
+        background-color: unset;
+        box-shadow: 15px 20px 30px -15px #3b28cc;
+        border-radius: 10px;
+    }
+    #_navBar img{
+        height: 20px;
+        width: 20px;
+    }
+.nav-link{
+    padding: .5%;
+}
+
+    #social-icons img {
+        height: 20px;
+        width: 20px;
+    }
+
 }

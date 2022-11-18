@@ -7,76 +7,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Portfolio</title>
 </head>
 
-<body class="pages">
+<body>
     <header>
         <!-- *******NAV BAR******** -->
-        <nav class="navbar navbar-expand-sm navbar-dark justify-content-end" id="_navBar">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                <span class="navbar-toggler-icon">
-                </span>
-            </button>
-            <div class="collapse navbar-collapse w-100" id="navbarMenu">
-                <ul class="navbar-nav w-100 justify-content-center">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link text-white">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link text-white">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link text-white">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link text-white">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link text-white">Contact</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav" id="mobileLinks">
-                    <li class="nav-item">
-                        <a class="nav-link text-white " aria-current="page" href="https://twitter.com/"
-                            id="social-icons">
-                            <img src="https://cdn.iconfinder.com/stored_data/711518/128/png?token=1668501012-nqhgB6bzFh9KniDZUXVOdDnhcam1w3FE4Q23c5hEimk%3D"
-                                alt="bootstrap" width="30" height="30">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://open.spotify.com/user/12127914974" id="social-icons">
-                            <img src="https://cdn.iconfinder.com/stored_data/711521/128/png?token=1668501094-nT6fwPFHg%2Fv8RKeZl5gFLhBT0GXFA4FWgFD%2F8lsNfyM%3D"
-                                alt="bootstrap" width="30" height="30">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://discord.com/" id="social-icons">
-                            <img src="https://cdn.iconfinder.com/stored_data/711524/128/png?token=1668501252-ICwZVvEXBElL4e8Xrr0IteRl9u8gMavwfnyNdJTso4g%3D"
-                                alt="bootstrap" width="30" height="30"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/" id="social-icons">
-                            <img src="https://cdn.iconfinder.com/stored_data/711523/128/png?token=1668501135-%2BBzFYLezhvMiN9pL6gpM2hk8X2YnzH3UZt9I7aOryO4%3D"
-                                alt="bootstrap" width="30" height="30"></a>
-                    </li>
+        <nav>
+            <div class="navbar navbar-expand-md navbar-dark justify-content-end" id="_navBar">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="navbar-collapse justify-content-center" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link text-white">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link text-white">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link text-white">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#resume" class="nav-link text-white">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link text-white">Contact</a>
+                        </li>
+                    </ul>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="https://www.linkedin.com/in/noe-robles-11899b60/">
-                            <img src="https://cdn.iconfinder.com/stored_data/711517/128/png?token=1668501200-Vl%2FqXfNRvczIw18q%2BH9RpY%2F0T2dJvEAgiubkR%2F5e%2BWY%3D"
-                                alt="bootstrap" width="30" height="30">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="mailto:roblesnoe1030@gmail.com">
-                            <img src="https://cdn.iconfinder.com/stored_data/712750/128/png?token=1668500977-orG%2BVIATZq8kjy%2BAEWKbzR1emiPYkZeLwI7k5F5n1ew%3D"
-                                alt="bootstrap" width="30" height="30">
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav" id="mobileLinks">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://twitter.com/">
+                                <img src="https://cdn.iconfinder.com/stored_data/711518/128/png?token=1668712222-5txx4lCzNH1SxNMli%2F3FPGQH5XHxStMMHKZl5mVpdmQ%3D"
+                                    alt="bootstrap" height="30px" width="30px">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://open.spotify.com/user/12127914974">
+                                <img src="https://cdn.iconfinder.com/stored_data/711521/128/png?token=1668712407-YEZsbV7KMmnnFlD96WBFaQT2W9LEdNCDPOEznW0QWtc%3D"
+                                    alt="bootstrap" height="30px" width="30px">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://discord.com/">
+                                <img src="https://cdn.iconfinder.com/stored_data/711524/128/png?token=1668712499-qutRUEmt7i%2BxeFOM%2FooDLeAOXcEGstuZPjAnTGzy41U%3D"
+                                    alt="bootstrap" height="30px" width="30px"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/">
+                                <img src="https://cdn.iconfinder.com/stored_data/711523/128/png?token=1668712465-ZZC1UjdThfdvs3Yj1ccTzzgeKAlOidkPIH7B8cMAqMA%3D"
+                                    alt="bootstrap" height="30px" width="30px"></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/noe-robles-11899b60/">
+                                <img src="https://cdn.iconfinder.com/stored_data/711517/128/png?token=1668712354-GYsbukYbvE0x938yc8442Htfccm4YY5hyYkbnGieNo4%3D"
+                                    alt="bootstrap" height="30px" width="30px">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:roblesnoe1030@gmail.com">
+                                <img src="https://cdn.iconfinder.com/stored_data/712750/128/png?token=1668712265-PSdeVji%2FFJdEoexrDbQ1JpKRdz7sYIRcI36oxYCOeJE%3D"
+                                    alt="bootstrap" height="30px" width="30px">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-
         </nav>
     </header>
 
@@ -86,28 +91,32 @@
             <img src="https://picsum.photos/200">
         </div>
         <div class="loader-wrapper">
-            <span class="loader"></span></span>
+            <span class="loader"></span>
         </div>
 
-        </div>
+
         <section class="animated animatedFadeInUp fadeInUp" id="home">
             <div class="inner">
                 <div class="homeStyled" id="heroContainer">
                     <h1>Hello, my name is</h1>
                     <div class="animated animatedFadeInUp fadeInUp">
-                        <h2 class="big-heading"><u class="underLine">Noe Robles</u></h2>
+                        <h2 class="big-heading">Noe Robles</h2>
                     </div>
                     <div class="animated animatedFadeInUp fadeInUp">
                         <h3 class="big-heading">I create things for the web.</h3>
                     </div>
                     <div class="animated animatedFadeInUp fadeInUp">
-                        <p>I’m currently enrolled at <a href="https://austincodingacademy.com/" rel="noreferrer">Austin
+                        <p>I’m currently enrolled at <a href="https://austincodingacademy.com/">Austin
                                 Coding Academy</a> to increase my
-                        knowledge in web
-                        development.</p>
+                            knowledge in web
+                            development.</p>
+                    </div>
+                    <div id="hero">
+                        <img class="aboutStyledPic"
+                            src="https://media-exp1.licdn.com/dms/image/D5603AQFHkdFU1w3LJA/profile-displayphoto-shrink_400_400/0/1668478191226?e=1674086400&amp;v=beta&amp;t=zht-Z3IixIGnEgj2MEvVk8IONeNku7K1ltFeL0ZbLy0"
+                            alt="linkedIn-pic">
                     </div>
                 </div>
-
             </div>
         </section>
         <div id="pBgIMG" class="bgimg-2"></div>
@@ -115,10 +124,9 @@
             <div class="inner">
                 <div class="aboutStyled">
 
-                    <h2 class="numbered-heading"><u class="underLine">About Me</u></h2>
-                    <p>I'm a junior developer currently learning languages and frameworks. I developed an
-                        interest
-                        in coding towards the end of my time in the military.</p>
+                    <h2 class="big-heading">About Me</h2>
+                    <p>I'm a junior developer currently learning languages and frameworks.</p>
+                    <p>I developed an interest in coding towards the end of my time in the military.</p>
                     <p>One year later here I am today building things for the web.</p>
                     <p>Here are a few technologies I’ve been working with.</p>
                     <ul class="skills-list">
@@ -128,24 +136,18 @@
                         <li>Node JS</li>
                         <li>SQL</li>
                         <li>React</li>
-
                     </ul>
-                    <div id="hero">
-                        <img class="aboutStyledPic"
-                            src="https://media-exp1.licdn.com/dms/image/D5603AQFHkdFU1w3LJA/profile-displayphoto-shrink_400_400/0/1668478191226?e=1674086400&v=beta&t=zht-Z3IixIGnEgj2MEvVk8IONeNku7K1ltFeL0ZbLy0"
-                            alt="linkedIn-pic">
-                    </div>
                 </div>
 
             </div>
-            </div>
+
 
         </section>
         <div id="pBgIMG" class="bgimg-3"></div>
         <section id="portfolio" class="animated animatedFadeInUp fadeInUp">
             <div class="inner">
                 <div class="portfolioStyled">
-                    <h2 class="numbered-heading"><u class="underLine">Portfolio</u></h2>
+                    <h2 class="big-heading">Portfolio</h2>
                     <p>Here are some things I've created</p>
                     <div class="cards">
                         <div class="flip-card">
@@ -153,10 +155,10 @@
                                 <div class="flip-card-front">
 
                                     <img class="portfolioIcons"
-                                        src="https://cdn.iconfinder.com/stored_data/716680/128/png?token=1668546845-Ih792R6fJ%2Fx2K29aWLUVDVA%2BnK2sKUQai2g7SRtqmfI%3D"
+                                        src="https://cdn.iconfinder.com/stored_data/721412/128/png?token=1668746134-i9IbyPW%2BbHuqmHvQHyr%2FIU72L%2FuY2MxQTvmSf53pZ3o%3D"
                                         alt="html5Icon">
                                     <img class="portfolioIcons"
-                                        src="https://cdn.iconfinder.com/stored_data/716767/128/png?token=1668549422-o9X%2B9%2FiqI%2BXLOdRcL53PDFD23mvWGdu33ej%2Bb9capNg%3D"
+                                        src="https://cdn.iconfinder.com/stored_data/721405/128/png?token=1668746168-K%2BTV%2B5zIwGZMVlCHA%2FRGSP3O7BEcHnGdVII0OqXn2AY%3D"
                                         alt="cssIcon">
 
                                 </div>
@@ -164,7 +166,7 @@
                                     <a target="_blank" href="https://noearobles.github.io/smallBusinessWebsite/">
                                         <img src="sampleBusinessWebsiteThumbnail-Icon.png" alt="smallBusinessWebsite">
                                     </a>
-                                 
+
 
                                 </div>
                             </div>
@@ -177,7 +179,7 @@
                                 <div class="flip-card-front">
 
                                     <img class="portfolioIcons"
-                                        src="https://cdn.iconfinder.com/stored_data/716860/128/png?token=1668553394-TBJK9Blve5xZIwUoTHTbHqBniw56gLTJjJ5zABeVBGM%3D"
+                                        src="https://cdn.iconfinder.com/stored_data/721406/128/png?token=1668745660-HmkrosmVdpv9yrcxYz2EcSUO8FHZG6iVjAmB2fWd%2FgY%3D"
                                         alt="javaScriptIcon">
 
 
@@ -203,27 +205,26 @@
         <section id="resume" class="animated animatedFadeInUp fadeInUp">
             <div class="inner">
                 <div class="jobsStyled">
-                    <h2 class="numbered-heading"><u class="underLine">Where I've Worked</u></h2>
+                    <h2 class="big-heading">Where I've Worked</h2>
                     <div class="tab" id="buttons">
-                        <button id="btn1" class="tablinks active" onclick="openJob(event, 'US Army')">Military</button>
+                        <button id="btn1" class="tablinks" onclick="openJob(event, 'US Army')">Military</button>
                         <button id="btn2" class="tablinks" onclick="openJob(event, 'Hospitality')">Hospitality</button>
                         <button id="btn3" class="tablinks" onclick="openJob(event, 'Paralegal')">Paralegal</button>
                     </div>
                     <!-- Tab content -->
-                    <div id="US Army" class="tabcontent">
+                    <div id="US Army" class="tabcontent" style="display: none;">
                         <h3>US Army Infantry
                         </h3>
                         <p>Military professional with experience managing teams,
-                            producing graphics, overlays and reports, and disseminating tactical information. I
-                            quickly rose to a leadership positition and I'm looking to make a transiton from a
-                            successful time in service. What I gained from it all was:</p>
+                            producing graphics, overlays and reports, and disseminating tactical information. I'm looking to make a transiton from a
+                            successful time in service. Skills included:</p>
                         <li>Project management</li>
                         <li>Leadership</li>
                         <li>Cross-cultural communication</li>
                         <li>Critical thinking</li>
                         <li>Quick learner</li>
                         <li>Weapons training</li>
-                        </ul>
+
                     </div>
 
                     <div id="Hospitality" class="tabcontent">
@@ -238,10 +239,10 @@
                         <li>Clean work space</li>
                     </div>
 
-                    <div id="Paralegal" class="tabcontent">
+                    <div id="Paralegal" class="tabcontent" style="display: none;">
                         <h3>Paralegal</h3>
                         <p>Prior to my time in the military, I served as a paralegal for my father's law office. The
-                            majority of the work I did then was
+                            majority of the work I did then was:
                             mainly administrative.</p>
                         <li>Phone reception</li>
                         <li>Excel spreadhseets</li>
@@ -255,7 +256,7 @@
         <section id="contact" class="animated animatedFadeInUp fadeInUp">
             <div class="inner">
                 <div class="contactStyled">
-                    <h2 class="numbered-heading overline"><u class="underLine">What's Next?</u></h2>
+                    <h2 class="big-heading">What's Next?</h2>
                     <h2 class="title">Get In Touch</h2>
                     <p>My inbox is always open. Whether you
                         have a question, would like some information, or just want to say hi, send me a message and I’ll
@@ -268,42 +269,34 @@
         </section>
         <footer>
 
-            <nav id="nBarAnchor" class="navbar fixed-bottom justify-content-center navbar-dark" data-target="#navbarNav"
-                aria-expanded="false" aria-controls="navbarNav">
+            <nav>
 
-                <div class="navbar" id="navbarNav">
-
+                <div class="navbar d-flex justify-content-center justify-content-center w-100"
+                    id="navbarNav">
                     <a class="nav-item nav-link active" href="https://twitter.com/" id="social-icons">
-                        <img src="https://cdn.iconfinder.com/stored_data/711518/128/png?token=1668501012-nqhgB6bzFh9KniDZUXVOdDnhcam1w3FE4Q23c5hEimk%3D"
-                            alt="bootstrap" width="30px" height="30px">
+                        <img src="https://cdn.iconfinder.com/stored_data/711518/128/png?token=1668712222-5txx4lCzNH1SxNMli%2F3FPGQH5XHxStMMHKZl5mVpdmQ%3D"
+                            alt="bootstrap">
                     </a>
-
-
                     <a class="nav-item nav-link" href="https://open.spotify.com/user/12127914974" id="social-icons">
-                        <img src="https://cdn.iconfinder.com/stored_data/711521/128/png?token=1668501094-nT6fwPFHg%2Fv8RKeZl5gFLhBT0GXFA4FWgFD%2F8lsNfyM%3D"
-                            alt="bootstrap" width="30px" height="30px">
+                        <img src="https://cdn.iconfinder.com/stored_data/711521/128/png?token=1668712407-YEZsbV7KMmnnFlD96WBFaQT2W9LEdNCDPOEznW0QWtc%3D"
+                            alt="bootstrap">
                     </a>
-
-
                     <a class="nav-item nav-link" href="https://discord.com/" id="social-icons">
-                        <img src="https://cdn.iconfinder.com/stored_data/711524/128/png?token=1668501252-ICwZVvEXBElL4e8Xrr0IteRl9u8gMavwfnyNdJTso4g%3D"
-                            class="nav-item" width="30px" height="30px">
-                        <a class="nav-item nav-link" href="https://github.com/" id="social-icons">
-                            <img src="https://cdn.iconfinder.com/stored_data/711523/128/png?token=1668501135-%2BBzFYLezhvMiN9pL6gpM2hk8X2YnzH3UZt9I7aOryO4%3D"
-                                alt="bootstrap" width="30px" height="30px"></a>
-                        <a href="https://www.linkedin.com/in/noe-robles-11899b60/"
-                            class="nav-item nav-link disabled"><img
-                                src="https://cdn.iconfinder.com/stored_data/711517/128/png?token=1668501200-Vl%2FqXfNRvczIw18q%2BH9RpY%2F0T2dJvEAgiubkR%2F5e%2BWY%3D"
-                                alt="bootstrap" width="30" height="30">
-                        </a>
+                        <img src="https://cdn.iconfinder.com/stored_data/711524/128/png?token=1668712499-qutRUEmt7i%2BxeFOM%2FooDLeAOXcEGstuZPjAnTGzy41U%3D"
+                            class="nav-item">
+                    </a><a class="nav-item nav-link" href="https://github.com/" id="social-icons">
+                        <img src="https://cdn.iconfinder.com/stored_data/711523/128/png?token=1668712465-ZZC1UjdThfdvs3Yj1ccTzzgeKAlOidkPIH7B8cMAqMA%3D"
+                            alt="bootstrap"></a>
+                    <a href="https://www.linkedin.com/in/noe-robles-11899b60/" id="social-icons"
+                        class="nav-item nav-link"><img
+                            src="https://cdn.iconfinder.com/stored_data/711517/128/png?token=1668712354-GYsbukYbvE0x938yc8442Htfccm4YY5hyYkbnGieNo4%3D"
+                            alt="bootstrap">
+                    </a>
 
                 </div>
-
             </nav>
-            </div>
-    </main>
 
-    </footer>
+        </footer>
     </main>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -316,6 +309,8 @@
         crossorigin="anonymous"></script>
 
     <script src="scrpipt.js"></script>
+
+
 
 </body>
 
