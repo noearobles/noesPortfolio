@@ -315,11 +315,7 @@ main.fillHeight {
     background-color: #0c0f0a;
 }
 
-.skills-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 
-}
 
 /* ****************************END OF BODY*************************************** */
 
@@ -692,10 +688,10 @@ main.fillHeight {
     }
 
     .inner {
- 
+ padding: 1%;
         margin-bottom: 20px;
         width: 80%;
-        height: 95%;
+        height: fit-content;
     }
 
 
