@@ -641,10 +641,6 @@ main.fillHeight {
         display: none;
     }
 
-    li {
-        display: block;
-
-    }
 
     .tab {
         display: flex;
