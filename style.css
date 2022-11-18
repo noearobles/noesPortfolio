@@ -68,7 +68,6 @@ header {
 
 * {
     margin: 0px;
-    padding: 0px;
 }
 
 body {
@@ -653,102 +652,6 @@ main.fillHeight {
     }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation:portrait) {
-
-    body {
-        font-size: 15px;
-    }
-
-    .cards {
-        align-self: center;
-    }
-
-    .flip-card {
-
-        width: 100px;
-        height: 50px;
-
-    }
-
-
-    .navbar-toggler {
-        padding: 0px;
-
-    }
-
-    .flip-card img {
-        width: 40px;
-        height: 40px;
-
-    }
-
-    section {
-        position: relative;
-        height: 100vh;
-    }
-
-    .inner {
-        width: 80%;
-        height: fit-content;
-    }
-
-
-    .aboutStyledPic {
-        height: 100%;
-        width: 100%;
-    }
-
-
-    h1 {
-        font-size: 20px;
-    }
-
-    h2.big-heading {
-        margin: 0px;
-        font-size: clamp(10px, 20vw, 20px);
-    }
-
-
-    h2.title,
-    h3,
-    h3.big-heading {
-        font-size: clamp(10px, 8vw, 20px);
-        margin-top: 10px;
-        line-height: 1.3;
-        color: #06d6a0;
-    }
-
-
-    .big-heading {
-        margin: 0px;
-        font-size: clamp(10px, 8vw, 20px);
-    }
-
-    .tablinks {
-        font-size: smaller;
-        text-align: center;
-        cursor: pointer;
-        background-color: #081c15;
-        color: #fff;
-        border-color: #081c15;
-        padding: 1%;
-        box-shadow: 0 20px 30px -15px #3b28cc;
-        background-color: #081c15;
-        border-width: 2px;
-        border-radius: 4px;
-    }
-
-    .nav-item {
-        padding-right: 8px;
-    }
-
-    #_navBar img:hover {
-        background-color: unset;
-        box-shadow: 15px 20px 30px -15px #3b28cc;
-        border-radius: 10px;
-    }
-}
-
 @media only screen and (min-device-width: 375px) and (max-device-width: 900px) and (orientation:landscape) {
 
 
@@ -860,3 +763,100 @@ main.fillHeight {
     }
 
 }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation:portrait) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .cards {
+        align-self: center;
+    }
+
+    .flip-card {
+
+        width: 100px;
+        height: 50px;
+
+    }
+
+
+    .navbar-toggler {
+        padding: 0px;
+
+    }
+
+    .flip-card img {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    section {
+        position: relative;
+        height: 100vh;
+    }
+
+    .inner {
+        width: 80%;
+        height: fit-content;
+    }
+
+
+    .aboutStyledPic {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2.big-heading {
+        margin: 0px;
+        font-size: clamp(10px, 20vw, 20px);
+    }
+
+
+    h2.title,
+    h3,
+    h3.big-heading {
+        font-size: clamp(10px, 8vw, 20px);
+        margin-top: 10px;
+        line-height: 1.3;
+        color: #06d6a0;
+    }
+
+
+    .big-heading {
+        margin: 0px;
+        font-size: clamp(10px, 8vw, 20px);
+    }
+
+    .tablinks {
+        font-size: smaller;
+        text-align: center;
+        cursor: pointer;
+        background-color: #081c15;
+        color: #fff;
+        border-color: #081c15;
+        padding: 1%;
+        box-shadow: 0 20px 30px -15px #3b28cc;
+        background-color: #081c15;
+        border-width: 2px;
+        border-radius: 4px;
+    }
+
+    .nav-item {
+        padding-right: 8px;
+    }
+
+    #_navBar img:hover {
+        background-color: unset;
+        box-shadow: 15px 20px 30px -15px #3b28cc;
+        border-radius: 10px;
+    }
+}
+
