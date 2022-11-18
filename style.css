@@ -65,11 +65,6 @@ header {
 /* *********************END OF NAVIGATION*************************** */
 
 /* ************************BODY***************************************** */
-
-* {
-    margin: 0px;
-}
-
 body {
     height: 100%;
     width: 100%;
@@ -684,11 +679,11 @@ main.fillHeight {
 
     section {
         position: relative;
-       
+
     }
 
     .inner {
- padding: 1%;
+        padding: 1%;
         margin-bottom: 20px;
         width: 80%;
         height: fit-content;
@@ -857,4 +852,3 @@ main.fillHeight {
         border-radius: 10px;
     }
 }
-
