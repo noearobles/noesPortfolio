@@ -549,13 +549,10 @@ main.fillHeight {
 
     }
 
-    section {
-        position: relative;
-        height: 100vh;
-    }
+
 
     .inner {
-        width: 85%;
+
         height: 80%;
     }
 
@@ -677,8 +674,8 @@ main.fillHeight {
     .inner {
         padding: 1%;
         margin-bottom: 20px;
-        width: 80%;
-        height: 85%;
+
+
     }
 
 
@@ -687,9 +684,7 @@ main.fillHeight {
         width: 100px;
     }
 
-    #resume .inner {
-        height: 50%;
-    }
+
     h1 {
         font-size: 20px;
     }
@@ -782,13 +777,11 @@ main.fillHeight {
     }
 
     .inner {
-        width: 80%;
+        width: 70%;
         height: fit-content;
     }
 
-    #resume .inner {
-        height: 45%;
-    }
+
 
     .jobsStyled {
         height: 100%;
