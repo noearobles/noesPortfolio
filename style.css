@@ -757,9 +757,6 @@ main.fillHeight {
         font-size: 15px;
     }
 
-section{
-    height: 50vh;
-}
 
     .cards {
         align-self: center;
@@ -782,11 +779,6 @@ section{
         width: 40px;
         height: 40px;
 
-    }
-
-    section {
-        position: relative;
-        height: 100vh;
     }
 
     .inner {
