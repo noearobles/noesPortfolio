@@ -3,14 +3,17 @@ header {
     animation: 2s ease-out 0s 1 slideInLeft;
     animation-delay: 3s;
 }
+
 .navbar-dark .navbar-toggler-icon {
     background-image:
         url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap=' round' stroke-miterlimit=' 10' stroke-width=' 2' d=' M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 .navbar-dark .navbar-toggler {
     border: 1px;
     color: #06d6a0;
 }
+
 #_navBar {
     top: 0;
     position: fixed;
@@ -20,20 +23,24 @@ header {
     z-index: 1000;
     /* Transition effect when sliding down (and up) if desired */
 }
+
 /* Style the navbar links */
 .navbar-dark .navbar-toggler-icon {
     background-image:
         url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap=' round' stroke-miterlimit=' 10' stroke-width=' 2' d=' M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 .navbar-dark .navbar-toggler {
     border: 1px;
     color: #06d6a0;
 }
+
 #_navBar a {
     color: white;
     text-align: end;
     border-radius: 10px;
 }
+
 #_navBar a:hover {
     background-color: #06d6a0;
 }
@@ -41,11 +48,13 @@ header {
 #social-icons img {
     height: 200px;
 }
+
 #social-icons img:hover {
     background-color: #081c15;
     box-shadow: 15px 20px 30px -15px #3b28cc;
     border-radius: 10px;
 }
+
 /* *********************END OF NAVIGATION*************************** */
 /* ************************BODY***************************************** */
 body {
@@ -105,7 +114,6 @@ section {
     width: 300px;
     border-radius: 50%;
     border-width: 10px;
-    border-color: #0f4c5c;
 }
 
 .homeStyled,
@@ -119,11 +127,13 @@ section {
     flex-direction: column;
     box-shadow: 0 20px 30px -15px #3b28cc;
 }
+
 h2 {
     font-family: 'Archivo Black', sans-serif;
     font-size: clamp(10px, 8vw, 60px);
     text-decoration-thickness: 1px;
 }
+
 h1 {
     font-size: 30px;
 }
@@ -353,11 +363,15 @@ li {
 }
 
 .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 100px;
     background-repeat: 10%;
-    border: 20px solid #06d6a0;
+    border: 10px solid #06d6a0;
     animation: loader 2s infinite ease;
+    border-radius: 10px;
 }
 
 .loader-wrapper {
