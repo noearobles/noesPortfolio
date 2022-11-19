@@ -849,11 +849,3 @@ main.fillHeight {
         border-radius: 10px;
     }
 }
-
-
-
-@media only screen and (max-device-width: 375px){
-#resume .inner {
-    height: 60%;
-}
-}
