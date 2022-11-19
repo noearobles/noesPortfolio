@@ -1,8 +1,6 @@
 /* **********************NAVIGATION **************************************** */
 
 header {
-
-
     animation: 2s ease-out 0s 1 slideInLeft;
     animation-delay: 3s;
 }
@@ -127,7 +125,7 @@ ul {
 
 .inner {
     width: 80%;
-    height: 85%;
+    height: max-content;
     border-radius: 10px;
     padding: 2%;
     background-color: #081c15;
@@ -161,7 +159,7 @@ ul {
 .aboutStyled,
 .portfolioStyled,
 .contactStyled {
-    height: 100%;
+    height: max-content;
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -540,13 +538,6 @@ main {
     }
 
 
-
-    .inner {
-
-        height: 80%;
-    }
-
-
     .aboutStyledPic {
         height: 100%;
         width: 100%;
@@ -627,7 +618,7 @@ main {
 }
 
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 926px) and (orientation:portrait) {
+@media only screen and (min-device-width: 345px) and (max-device-width: 926px) and (orientation:portrait) {
 
     body {
         font-size: 15px;
@@ -659,7 +650,6 @@ main {
 
     .inner {
         width: 70%;
-        height: fit-content;
     }
 
 
@@ -669,8 +659,8 @@ main {
     }
 
     .aboutStyledPic {
-        height: 100%;
-        width: 100%;
+        height: 80%;
+        width: 80%;
     }
 
 
@@ -725,7 +715,7 @@ main {
 }
 
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 926px) and (orientation:landscape) {
+@media only screen and (min-device-width: 345px) and (max-device-width: 926px) and (orientation:landscape) {
 
 
 
@@ -767,6 +757,13 @@ main {
 
     }
 
+   section#about.animatedFadeInUp{
+        margin-top: 30px;
+    }
+
+div#navbarNav{
+    padding: 0px;
+}
 
     .aboutStyledPic {
         height: 100px;
