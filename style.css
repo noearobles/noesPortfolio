@@ -46,7 +46,11 @@ header {
 #_navBar a {
     color: white;
     text-align: end;
+    border-radius: 10px;
+}
 
+#_navBar a:hover {
+    background-color: #06d6a0;
 }
 
 #social-icons img {
@@ -97,46 +101,35 @@ h2 {
 
 
 h1 {
-    font-size: 50px;
+    font-size: 30px;
 }
 
 h2.big-heading {
     font-family: 'Archivo Black', sans-serif;
-    font-size: clamp(10px, 8vw, 70px);
+    font-size: clamp(10px, 8vw, 40px);
     text-decoration-thickness: 1px;
     color: #06d6a0;
 }
 
 h3 {
     padding-top: 1%;
-    font-size: clamp(10px, 8vw, 40px);
+    font-size: clamp(10px, 8vw, 30px);
     font-weight: bolder;
     margin-top: 10px;
     line-height: 1.3;
     color: #06d6a0;
 }
 
-h3.big-heading {
-    font-size: clamp(10px, 8vw, 40px);
-    margin-top: 10px;
-    line-height: 1.3;
-    color: #06d6a0;
+ul {
+    padding: 0%;
+
 }
-
-
-button {
-
-    width: fit-content;
-    border-radius: 5px;
-}
-
-
 
 .inner {
     width: 80%;
-    height: fit-content;
+    height: 85%;
     border-radius: 10px;
-    padding: 3%;
+    padding: 2%;
     background-color: #081c15;
     box-shadow: 15px 20px 30px -15px #06d6a0;
     position: absolute;
@@ -154,8 +147,8 @@ button {
 .aboutStyledPic {
     padding: 1%;
     box-shadow: 0 10px 30px -15px #06d6a0;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     border-width: 10px;
     border-color: #0f4c5c;
@@ -168,14 +161,17 @@ button {
 .aboutStyled,
 .portfolioStyled,
 .contactStyled {
-    height: fit-content;
+    height: 100%;
     padding: 5%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     box-shadow: 0 20px 30px -15px #3b28cc;
 }
 
+
+li {
+    list-style: none;
+}
 
 #buttons.tab {
     display: flex;
@@ -293,7 +289,6 @@ main.fillHeight {
 }
 
 .tablinks {
-    height: min-content;
     text-align: center;
     cursor: pointer;
     background-color: #081c15;
@@ -561,7 +556,7 @@ main.fillHeight {
 
     .inner {
         width: 85%;
-        height: fit-content;
+        height: 80%;
     }
 
 
@@ -611,8 +606,8 @@ main.fillHeight {
 
     .tab {
         display: flex;
-        flex-direction:row;
- 
+        flex-direction: row;
+
     }
 
 
@@ -644,13 +639,14 @@ main.fillHeight {
     }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 900px) and (orientation:landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 926px) and (orientation:landscape) {
 
 
 
 
     body {
         font-size: 15px;
+        line-height: 1;
     }
 
     .cards {
@@ -678,16 +674,11 @@ main.fillHeight {
         gap: 10px;
     }
 
-    section {
-        position: relative;
-
-    }
-
     .inner {
         padding: 1%;
         margin-bottom: 20px;
         width: 80%;
-        height: fit-content;
+        height: 85%;
     }
 
 
@@ -696,7 +687,9 @@ main.fillHeight {
         width: 100px;
     }
 
-
+    #resume .inner {
+        height: 50%;
+    }
     h1 {
         font-size: 20px;
     }
@@ -758,11 +751,15 @@ main.fillHeight {
 
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 900px) and (orientation:portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 926px) and (orientation:portrait) {
 
     body {
         font-size: 15px;
     }
+
+section{
+    height: 50vh;
+}
 
     .cards {
         align-self: center;
@@ -797,6 +794,13 @@ main.fillHeight {
         height: fit-content;
     }
 
+    #resume .inner {
+        height: 45%;
+    }
+
+    .jobsStyled {
+        height: 100%;
+    }
 
     .aboutStyledPic {
         height: 100%;
@@ -852,4 +856,12 @@ main.fillHeight {
         box-shadow: 15px 20px 30px -15px #3b28cc;
         border-radius: 10px;
     }
+}
+
+
+
+@media only screen and (max-device-width: 375px){
+#resume .inner {
+    height: 60%;
+}
 }
