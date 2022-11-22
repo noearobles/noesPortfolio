@@ -83,24 +83,31 @@ main {
 section {
     display: flex;
     justify-content: center;
-    margin: 0;
-    position: relative;
-    min-height: 100vh;
-    max-height: fit-content;
+    height: fit-content;
 }
 
 .inner {
     width: 80%;
-    height: max-content;
+    height: 80%;
     border-radius: 10px;
     padding: 2%;
     background-color: #081c15;
     box-shadow: 15px 20px 30px -15px #06d6a0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+
 }
+
+#home{
+    margin-bottom: 20vh;
+}
+#contact{
+    margin-top: 20vh;
+}
+
+#about, #portfolio, #resume{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
 
 #hero {
     display: flex;
@@ -121,7 +128,7 @@ section {
 .aboutStyled,
 .portfolioStyled,
 .contactStyled {
-    height: max-content;
+    height: fit-content;
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -248,6 +255,7 @@ li {
     box-shadow: 0 20px 30px -15px #3b28cc;
 
 }
+
 
 #hero {
     align-self: center;
@@ -476,7 +484,6 @@ li {
 
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
-
 
     .flip-card {
 
@@ -722,6 +729,12 @@ li {
 
     }
 
+#home{
+    margin-top: 20vh;
+}
+#contact{
+    margin-bottom: 20vh;
+}
 
     .navbar-toggler {
         padding: 0px;
