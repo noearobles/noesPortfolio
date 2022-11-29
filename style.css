@@ -724,10 +724,14 @@ section{
         height: 50px;
 
     }
+#home{
+    margin-top: 20px;
+}
 
 #contact{
     margin-bottom: 20px;
 }
+
 
     .navbar-toggler {
         padding: 0px;
