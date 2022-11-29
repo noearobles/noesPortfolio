@@ -83,29 +83,19 @@ main {
 section {
     display: flex;
     justify-content: center;
-    height: fit-content;
+    align-items: center;
+    height: 100vh;
 }
 
 .inner {
     width: 80%;
-    height: 80%;
+    min-height: 60%;
+    max-height: fit-content;
     border-radius: 10px;
     padding: 2%;
     background-color: #081c15;
     box-shadow: 15px 20px 30px -15px #06d6a0;
 
-}
-
-#home{
-    margin-bottom: 20vh;
-}
-#contact{
-    margin-top: 20vh;
-}
-
-#about, #portfolio, #resume{
-    margin-top: 20vh;
-    margin-bottom: 20vh;
 }
 
 
@@ -128,7 +118,7 @@ section {
 .aboutStyled,
 .portfolioStyled,
 .contactStyled {
-    height: fit-content;
+    height: 100%;
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -192,8 +182,8 @@ li {
 }
 
 #social-icons img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .flip-card h3.big-heading {
@@ -492,6 +482,9 @@ li {
 
     }
 
+    #contact{
+        height: 80vh;
+    }
 
 
 }
@@ -717,6 +710,9 @@ li {
         font-size: 15px;
     }
 
+section{
+    height: fit-content;
+}
 
     .cards {
         align-self: center;
@@ -729,12 +725,9 @@ li {
 
     }
 
-#home{
-    margin-top: 20vh;
-}
-#contact{
+/* #contact{
     margin-bottom: 20vh;
-}
+} */
 
     .navbar-toggler {
         padding: 0px;
@@ -749,6 +742,10 @@ li {
 
     .inner {
         width: 70%;
+        min-height: unset;
+        height: fit-content;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
 
