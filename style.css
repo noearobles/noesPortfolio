@@ -725,9 +725,9 @@ section{
 
     }
 
-/* #contact{
-    margin-bottom: 20vh;
-} */
+#contact{
+    margin-bottom: 20px;
+}
 
     .navbar-toggler {
         padding: 0px;
