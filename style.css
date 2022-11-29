@@ -37,7 +37,7 @@ header {
 
 #_navBar a {
     color: white;
-    text-align: end;
+    float: right;
     border-radius: 10px;
 }
 
