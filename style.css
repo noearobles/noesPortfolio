@@ -724,13 +724,6 @@ section{
         height: 50px;
 
     }
-#home{
-    margin-top: 20px;
-}
-
-#contact{
-    margin-bottom: 20px;
-}
 
 
     .navbar-toggler {
@@ -748,10 +741,16 @@ section{
         width: 70%;
         min-height: unset;
         height: fit-content;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
+    #home{
+        margin-top: 30px;
+    }
+    #contact{
+        margin-bottom: 30px;
+    }
 
     .aboutStyledPic {
         height: 80%;
