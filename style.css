@@ -47,7 +47,8 @@ header {
 }
 
 #social-icons img {
-    height: 200px;
+    width: 60px;
+    height: 60px;
 }
 
 #social-icons img:hover {
@@ -90,7 +91,7 @@ section {
 
 .inner {
     width: 80%;
-    min-height: 60%;
+    min-height: 75%;
     max-height: fit-content;
     border-radius: 10px;
     padding: 2%;
@@ -125,7 +126,6 @@ section {
     flex-direction: column;
     box-shadow: 0 20px 30px -15px #3b28cc;
 }
-
 
 h2 {
     font-family: 'Archivo Black', sans-serif;
@@ -191,11 +191,6 @@ li {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-}
-
-#social-icons img {
-    width: 80px;
-    height: 80px;
 }
 
 .flip-card h3.big-heading {
@@ -274,6 +269,12 @@ li {
     background-color: #081c15;
     border-width: 5px;
     border-radius: 4px;
+}
+
+.tab button{
+   
+    height: 60px;
+    width: 200px;
 }
 
 .tablinks:hover {
@@ -564,7 +565,12 @@ li {
         font-size: clamp(10px, 8vw, 20px);
     }
 
-
+    .tab button{
+   
+        height: unset;
+        width: unset;
+    }
+    
 }
 
 @media (max-width:576px) {
@@ -722,7 +728,12 @@ li {
         height: 20px;
         width: 20px;
     }
-
+    .tab button{
+   
+        height: unset;
+        width: unset;
+    }
+    
 }
 
 @media only screen and (min-device-width: 345px) and (max-device-width: 926px) and (orientation:portrait) {
@@ -816,7 +827,12 @@ li {
         border-width: 2px;
         border-radius: 4px;
     }
-
+    .tab button{
+   
+        height: unset;
+        width: unset;
+    }
+    
     .nav-item {
         padding-right: 8px;
     }
