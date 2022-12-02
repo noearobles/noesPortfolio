@@ -14,6 +14,7 @@ header {
     color: #06d6a0;
 }
 
+
 #_navBar {
     top: 0;
     position: fixed;
@@ -125,6 +126,7 @@ section {
     box-shadow: 0 20px 30px -15px #3b28cc;
 }
 
+
 h2 {
     font-family: 'Archivo Black', sans-serif;
     font-size: clamp(10px, 8vw, 60px);
@@ -155,8 +157,18 @@ ul {
     padding: 0%;
 }
 
+.skills-list {
+    columns: 2;
+}
+
+.skills-list li img {
+    height: 40px;
+    width: 40px;
+}
+
 li {
     list-style: none;
+
 }
 
 #buttons.tab {
@@ -453,6 +465,10 @@ li {
         display: none;
     }
 
+    .skills-list li img {
+        height: 25px;
+        width: 25px;
+    }
 }
 
 
@@ -482,7 +498,7 @@ li {
 
     }
 
-    #contact{
+    #contact {
         height: 80vh;
     }
 
@@ -549,7 +565,6 @@ li {
     }
 
 
-
 }
 
 @media (max-width:576px) {
@@ -586,6 +601,12 @@ li {
     .tab button {
         width: fit-content;
         border-radius: 5px;
+    }
+
+    
+    .skills-list li img {
+        height: 20px;
+        width: 20px;
     }
 }
 
@@ -710,9 +731,9 @@ li {
         font-size: 15px;
     }
 
-section{
-    height: fit-content;
-}
+    section {
+        height: fit-content;
+    }
 
     .cards {
         align-self: center;
@@ -745,10 +766,11 @@ section{
         margin-bottom: 50px;
     }
 
-    #home{
+    #home {
         margin-top: 30px;
     }
-    #contact{
+
+    #contact {
         margin-bottom: 30px;
     }
 
