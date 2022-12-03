@@ -139,7 +139,7 @@ section {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    box-shadow: 0 20px 30px 0px #3b28cc;
+    box-shadow: 0 5px 30px 0px #3b28cc;
 }
 
 h2 {
@@ -267,7 +267,7 @@ li {
 .flip-card-back img {
 
     border-radius: 4px;
-    box-shadow: 0 20px 30px 0px #3b28cc;
+    box-shadow: 0 5px 30px 0px #3b28cc;
 
 }
 
@@ -291,7 +291,7 @@ li {
     color: #fff;
     border-color: #081c15;
     padding: 1%;
-    box-shadow: 0 20px 30px 0px #3b28cc;
+    box-shadow: 0 5px 30px 0px #3b28cc;
     background-color: #081c15;
     border-width: 5px;
     border-radius: 4px;
@@ -816,7 +816,7 @@ li {
         color: #fff;
         border-color: #081c15;
         padding: 1%;
-        box-shadow: 0 20px 30px 0px #3b28cc;
+        box-shadow: 0 5px 30px 0px #3b28cc;
         background-color: #081c15;
         border-width: 2px;
         border-radius: 4px;
@@ -974,7 +974,7 @@ li {
         color: #fff;
         border-color: #081c15;
         padding: 1%;
-        box-shadow: 0 20px 30px 0px #3b28cc;
+        box-shadow: 0 5px 30px 0px #3b28cc;
         background-color: #081c15;
         border-width: 2px;
         border-radius: 4px;
