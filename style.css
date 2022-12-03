@@ -591,12 +591,12 @@ li {
     }
 
     #resume .inner {
-        height: 85%;
+        height: 90%;
     }
 
     #contact .inner,
     #portfolio .inner {
-        min-height: 70%;
+        min-height: 75%;
         max-height: fit-content;
     }
 
