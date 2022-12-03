@@ -843,7 +843,7 @@ li {
 
 }
 
-@media only screen and (min-device-width: 345px) and (max-device-width: 926px) and (orientation:portrait) {
+@media only screen and (min-device-width: 345px) and (max-device-width: 926px)and (-webkit-min-device-pixel-ratio: 3) and (orientation:portrait) {
 
     body {
         font-size: 20px;
@@ -902,7 +902,7 @@ li {
 
     #resume .inner,
     #about .inner {
-        height: 85%;
+        height: 90%;
     }
 
   .inner{
@@ -912,7 +912,7 @@ li {
     #contact .inner,
     #home .inner,
     #portfolio .inner {
-        height: 60%;
+        height: 65%;
     }
 
     #hero {
