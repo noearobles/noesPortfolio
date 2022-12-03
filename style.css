@@ -922,12 +922,13 @@ li {
 
 
     h1 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     h2.big-heading {
         margin-bottom: 1.5rem;
-        font-size: clamp(10px, 20vw, 20px);
+        font-size: clamp(10px, 20vw, 25px);
+        font-weight: bolder;
     }
 
     h2.title,
