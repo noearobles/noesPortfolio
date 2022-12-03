@@ -62,7 +62,7 @@ header {
 body {
     height: 100%;
     width: 100%;
-    color: gainsboro;
+    color: #fff;
     height: 100%;
     background-color: #0c0f0a;
     -webkit-overflow-scrolling: touch;
@@ -83,6 +83,7 @@ main {
 }
 
 section {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,14 +92,28 @@ section {
 
 .inner {
     width: 80%;
-    min-height: 75%;
-    max-height: fit-content;
     border-radius: 10px;
     padding: 2%;
     background-color: #081c15;
     box-shadow: 15px 20px 30px -15px #06d6a0;
 
 }
+
+
+#home .inner,
+#about .inner {
+    height: 80%;
+}
+
+#resume .inner {
+    height: 70%;
+}
+
+#contact .inner,
+#portfolio .inner {
+    height: 60%;
+}
+
 
 
 #hero {
@@ -181,7 +196,7 @@ li {
 }
 
 .cards {
-    padding-top: 150px;
+    padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
@@ -202,8 +217,8 @@ li {
 .flip-card {
     box-shadow: 0 20px 30px -15px #06d6a0;
     background-color: #0c0f0a;
-    width: 200px;
-    height: 100px;
+    width: 400px;
+    height: 200px;
     perspective: 1000px;
 }
 
@@ -271,8 +286,8 @@ li {
     border-radius: 4px;
 }
 
-.tab button{
-   
+.tab button {
+
     height: 60px;
     width: 200px;
 }
@@ -474,7 +489,10 @@ li {
 
 
 @media only screen and (max-device-width: 1600px) {
-
+    .tab button{
+        height: 50px;
+    }
+    
 
     #pBgIMG {
         display: none;
@@ -491,6 +509,29 @@ li {
 
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    body {
+        font-size: 20px;
+    }
+
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2.big-heading {
+        margin: 0px;
+        font-size: clamp(10px, 15vw, 30px);
+    }
+
+
+    h2.title,
+    h3,
+    h3.big-heading {
+        font-size: clamp(10px, 8vw, 30px);
+        margin-top: 10px;
+        line-height: 1.3;
+        color: #06d6a0;
+    }
 
     .flip-card {
 
@@ -499,11 +540,41 @@ li {
 
     }
 
+.cards{
+    padding-top: 5px;
+}
+
+    #about,
+    #portfolio,
+    #resume {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .homeStyled,
+    .jobsStyled,
+    .aboutStyled,
+    .portfolioStyled,
+    .contactStyled {
+        padding: 2%;
+        height: 100%;
+    }
+
     #contact {
         height: 80vh;
     }
 
+    .inner {
+        height: 80%;
+    }
+.tab button{
+    height: 50px;
+}
 
+    .aboutStyledPic {
+        height: 150px;
+        width: 150px;
+    }
 }
 
 
@@ -565,12 +636,12 @@ li {
         font-size: clamp(10px, 8vw, 20px);
     }
 
-    .tab button{
-   
+    .tab button {
+
         height: unset;
         width: unset;
     }
-    
+
 }
 
 @media (max-width:576px) {
@@ -609,7 +680,7 @@ li {
         border-radius: 5px;
     }
 
-    
+
     .skills-list li img {
         height: 20px;
         width: 20px;
@@ -649,10 +720,33 @@ li {
         gap: 10px;
     }
 
+
+    #home .inner,
+    #about .inner {
+        height: 80%;
+    }
+
+    #resume .inner {
+        height: 70%;
+    }
+
+    #contact .inner,
+    #portfolio .inner {
+        height: 60%;
+    }
+
     .inner {
         padding: 1%;
-        margin-bottom: 20px;
 
+    }
+
+    .homeStyled,
+    .jobsStyled,
+    .aboutStyled,
+    .portfolioStyled,
+    .contactStyled {
+        padding: 2%;
+        height: 100%;
 
     }
 
@@ -728,12 +822,13 @@ li {
         height: 20px;
         width: 20px;
     }
-    .tab button{
-   
+
+    .tab button {
+
         height: unset;
         width: unset;
     }
-    
+
 }
 
 @media only screen and (min-device-width: 345px) and (max-device-width: 926px) and (orientation:portrait) {
@@ -743,11 +838,12 @@ li {
     }
 
     section {
-        height: fit-content;
+        height: 70vh;
     }
 
     .cards {
         align-self: center;
+        padding-top: 20px;
     }
 
     .flip-card {
@@ -769,25 +865,48 @@ li {
 
     }
 
-    .inner {
-        width: 70%;
-        min-height: unset;
-        height: fit-content;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    #home {
-        margin-top: 30px;
+    #home,
+    #about,
+    #portfolio,
+    #resume {
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 
     #contact {
-        margin-bottom: 30px;
+        margin-bottom: 100px;
     }
 
+    .homeStyled,
+    .jobsStyled,
+    .aboutStyled,
+    .portfolioStyled,
+    .contactStyled {
+        padding: 2%;
+        height: 100%;
+
+    }
+
+
+    #home .inner,
+    #about .inner {
+        height: 60%;
+    }
+
+    #resume .inner {
+        height: 70%;
+    }
+
+    #contact .inner,
+    #portfolio .inner {
+        height: 50%;
+    }
+
+
+
     .aboutStyledPic {
-        height: 80%;
-        width: 80%;
+        height: 100px;
+        width: 100px;
     }
 
 
@@ -827,12 +946,13 @@ li {
         border-width: 2px;
         border-radius: 4px;
     }
-    .tab button{
-   
+
+    .tab button {
+
         height: unset;
         width: unset;
     }
-    
+
     .nav-item {
         padding-right: 8px;
     }
