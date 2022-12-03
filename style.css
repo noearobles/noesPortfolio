@@ -523,9 +523,10 @@ li {
     body {
         font-size: 20px;
     }
-.inner{
-    padding: 1%;
-}
+
+    .inner {
+        padding: 1%;
+    }
 
     h1 {
         font-size: 20px;
@@ -574,8 +575,7 @@ li {
     .portfolioStyled,
     .contactStyled {
         padding: 2%;
-        min-height: 60%;
-        max-height: 95%;
+        height: 100%;
     }
 
     #contact {
@@ -585,7 +585,7 @@ li {
 
     #home .inner,
     #about .inner {
-        min-height: fit-content;
+        min-height: 9;
         max-height: 100%;
         overflow: hidden;
     }
