@@ -91,6 +91,7 @@ section {
 }
 
 .inner {
+    position: absolute;
     width: 80%;
     border-radius: 10px;
     padding: 2%;
@@ -119,6 +120,7 @@ section {
 #hero {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .aboutStyledPic {
@@ -157,9 +159,12 @@ h2.big-heading {
     font-size: clamp(10px, 8vw, 40px);
     text-decoration-thickness: 1px;
     color: #06d6a0;
+    margin-bottom: 1.5rem;
 }
 
-h3 {
+
+h3,
+h2.title {
     padding-top: 1%;
     font-size: clamp(10px, 8vw, 30px);
     font-weight: bolder;
@@ -489,10 +494,10 @@ li {
 
 
 @media only screen and (max-device-width: 1600px) {
-    .tab button{
+    .tab button {
         height: 50px;
     }
-    
+
 
     #pBgIMG {
         display: none;
@@ -519,7 +524,6 @@ li {
     }
 
     h2.big-heading {
-        margin: 0px;
         font-size: clamp(10px, 15vw, 30px);
     }
 
@@ -540,9 +544,13 @@ li {
 
     }
 
-.cards{
-    padding-top: 5px;
-}
+    #hero {
+        padding-top: 40px;
+    }
+
+    .cards {
+        padding-top: 5px;
+    }
 
     #about,
     #portfolio,
@@ -565,15 +573,16 @@ li {
     }
 
     .inner {
-        height: 80%;
+        height: 70%;
     }
-.tab button{
-    height: 50px;
-}
+
+    .tab button {
+        height: 50px;
+    }
 
     .aboutStyledPic {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
     }
 }
 
@@ -915,7 +924,7 @@ li {
     }
 
     h2.big-heading {
-        margin: 0px;
+        margin-bottom: 1.5rem;
         font-size: clamp(10px, 20vw, 20px);
     }
 
