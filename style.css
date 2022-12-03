@@ -126,8 +126,10 @@ section {
 .aboutStyledPic {
     padding: 1%;
     box-shadow: 0 10px 30px -15px #06d6a0;
-    height: 300px;
-    width: 300px;
+    max-height: 200px;
+    min-height: auto;
+    max-width: 200px;
+    min-width: auto;
     border-radius: 50%;
     border-width: 10px;
 }
@@ -141,6 +143,7 @@ section {
     padding: 5%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     box-shadow: 0 20px 30px -15px #3b28cc;
 }
 
@@ -222,8 +225,8 @@ li {
 .flip-card {
     box-shadow: 0 20px 30px -15px #06d6a0;
     background-color: #0c0f0a;
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 120px;
     perspective: 1000px;
 }
 
