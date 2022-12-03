@@ -185,8 +185,8 @@ ul {
 }
 
 .skills-list li img {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
 }
 
 li {
@@ -244,8 +244,8 @@ li {
 }
 
 .flip-card img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 
 }
 
@@ -276,6 +276,14 @@ li {
 
 }
 
+.sbwThumbNail,
+.tttThumbNail,
+.calcThumbNail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 #hero {
     align-self: center;
@@ -667,8 +675,6 @@ li {
 
     .cards {
         padding-top: 5px;
-        display: flex;
-        flex-direction: column;
     }
 
     .flip-card-front,
@@ -700,32 +706,34 @@ li {
 }
 
 
-@media only screen and (min-device-width: 345px) and (max-device-width: 926px) and (orientation:landscape) {
+@media only screen and (min-device-width: 345px) and (max-device-width: 926px)and (-webkit-min-device-pixel-ratio: 3) and (orientation:landscape) {
 
     body {
         font-size: 15px;
-        line-height: 1;
     }
 
     .cards {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         align-self: center;
         padding-top: 5px;
+        gap: 20px;
     }
 
     .flip-card {
 
-        width: 100px;
-        height: 50px;
+        width: 200px;
+        height: 100px;
 
     }
 
     .flip-card img {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
 
     }
+
 
     .flip-card-front,
     .flip-card-back {
@@ -749,7 +757,7 @@ li {
 
     .inner {
         padding: 1%;
-
+        width: 90%;
     }
 
     .homeStyled,
@@ -854,14 +862,16 @@ li {
     }
 
     .cards {
-        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-top: 20px;
     }
 
     .flip-card {
 
-        width: 100px;
-        height: 50px;
+        width: 200px;
+        height: 110px;
 
     }
 
@@ -872,10 +882,12 @@ li {
     }
 
     .flip-card img {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
 
     }
+
+
 
     #home,
     #about,
@@ -896,23 +908,23 @@ li {
     .contactStyled {
         padding: 2%;
         height: 100%;
-
+        display: flex;
+        flex-direction: column;
     }
-
 
     #resume .inner,
     #about .inner {
-        height: 90%;
+        height: 100%;
     }
 
-  .inner{
-    width: 90%;
-  }
+    .inner {
+        width: 90%;
+    }
 
     #contact .inner,
     #home .inner,
     #portfolio .inner {
-        height: 65%;
+        height: 75%;
     }
 
     #hero {
@@ -920,8 +932,8 @@ li {
     }
 
     .aboutStyledPic {
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
     }
 
 
@@ -961,6 +973,11 @@ li {
         background-color: #081c15;
         border-width: 2px;
         border-radius: 4px;
+    }
+
+    .tab {
+        display: flex;
+        flex-direction: column;
     }
 
     .tab button {
