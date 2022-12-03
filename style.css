@@ -739,7 +739,7 @@ li {
     }
 
     #resume .inner {
-        height: 70%;
+        height: 75%;
     }
 
     #contact .inner,
@@ -900,23 +900,22 @@ li {
     }
 
 
-    #home .inner,
+    #resume .inner,
     #about .inner {
-        height: 65%;
+        height: 70%;
     }
 
-    #resume .inner {
-        height: 75%;
-    }
+  
 
     #contact .inner,
+    #home .inner,
     #portfolio .inner {
-        height: 50%;
+        height: 60%;
     }
 
-#hero{
-    padding-top: 5px;
-}
+    #hero {
+        padding-top: 5px;
+    }
 
     .aboutStyledPic {
         height: 100px;
