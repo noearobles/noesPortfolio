@@ -138,7 +138,6 @@ section {
     padding: 5%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     overflow: hidden;
     box-shadow: 0 5px 30px 0px #3b28cc;
 }
@@ -574,7 +573,7 @@ li {
     .contactStyled {
         padding: 2%;
         min-height: 60%;
-        max-height: 95%;
+        max-height: 100%;
     }
 
     #contact {
@@ -595,7 +594,7 @@ li {
 
     #contact .inner,
     #portfolio .inner {
-        min-height: 70%;
+        min-height: 75%;
         max-height: fit-content;
     }
 
