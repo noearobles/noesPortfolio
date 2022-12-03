@@ -911,7 +911,9 @@ li {
         height: 50%;
     }
 
-
+#hero{
+    padding-top: 5px;
+}
 
     .aboutStyledPic {
         height: 100px;
