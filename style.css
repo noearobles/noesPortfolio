@@ -907,7 +907,11 @@ li {
 
 
 
-    #home,
+    #home{
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+
     #about,
     #portfolio,
     #resume {
@@ -942,7 +946,8 @@ li {
     }
 
     #resume .inner {
-        height: 90%;
+        height: 100%;
+        line-height: 1.4rem;
     }
 
     #hero {
@@ -1021,15 +1026,3 @@ li {
 }
 
 
-@media only screen and (max-device-width: 340px) {
-    #resume .inner {
-        height: 100%;
-        font-size: 15px;
-        line-height: 1.5rem;
-    }
-
-    #resume h2.big-heading,
-    h3 {
-        margin-bottom: 0;
-    }
-}
