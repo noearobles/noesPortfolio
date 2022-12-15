@@ -244,6 +244,15 @@ li {
 
 }
 
+.flip-card-front{
+    display: flex;
+    flex-direction: column;
+}
+#tech-icons{
+    display: flex;
+    flex-direction: row;
+}
+
 .flip-card-front,
 .flip-card-back {
     display: flex;
@@ -893,6 +902,10 @@ li {
 
     }
 
+    .flip-card-front{
+        margin-bottom: 0;
+        font-size: smaller;
+    }
 
     .navbar-toggler {
         padding: 0px;
@@ -908,19 +921,19 @@ li {
 
 
     #home{
-        margin-top: 100px;
-        margin-bottom: 150px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     #about,
     #portfolio,
     #resume {
-        margin-top: 150px;
-        margin-bottom: 150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     #contact {
-        margin-bottom: 100px;
+        margin-bottom: 10px;
     }
 
     .homeStyled,
@@ -942,11 +955,11 @@ li {
     #contact .inner,
     #home .inner,
     #portfolio .inner {
-        height: 95%;
+        height: min-content;
     }
 
     #resume .inner {
-        height: 100%;
+        height: fit-content;
         line-height: 1.4rem;
     }
 
@@ -955,8 +968,8 @@ li {
     }
 
     .aboutStyledPic {
-        height: 150px;
-        width: 150px;
+        height: 120px;
+        width: 120px;
     }
 
 
@@ -965,7 +978,7 @@ li {
     }
 
     h2.big-heading {
-        margin-bottom: 1.5rem;
+        margin-bottom: .5rem;
         font-size: clamp(10px, 20vw, 25px);
         font-weight: bolder;
     }
