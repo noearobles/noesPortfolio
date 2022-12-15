@@ -906,7 +906,11 @@ li {
         margin-bottom: 0;
         font-size: smaller;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+    #tech-icons{
+        display: flex;
+        font-display: row;
     }
 
     .navbar-toggler {
