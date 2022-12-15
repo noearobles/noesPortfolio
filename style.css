@@ -961,11 +961,11 @@ li {
     #contact .inner,
     #home .inner,
     #portfolio .inner {
-        height: min-content;
+        height: 90%;
     }
 
     #resume .inner {
-        height: fit-content;
+        height: 90%;
         line-height: 1.4rem;
     }
 
