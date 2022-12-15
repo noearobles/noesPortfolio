@@ -928,7 +928,6 @@ li {
 
     #home{
         margin-top: 10px;
-        margin-bottom: 20px;
     }
 
     #about,
@@ -939,7 +938,8 @@ li {
     }
 
     #contact {
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     .homeStyled,
@@ -958,10 +958,16 @@ li {
         width: 90%;
     }
 
-    #contact .inner,
-    #home .inner,
+    #home .inner{
+        height: 70%;
+    }
+
+    #contact .inner{
+        height: 60%;
+    }
+
     #portfolio .inner {
-        height: 90%;
+        height: 80%;
     }
 
     #resume .inner {
