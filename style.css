@@ -968,8 +968,8 @@ li {
     }
 
     #resume .inner {
-        height: fit-content;
-        line-height: 1.4rem;
+        height: 100%;
+        line-height: 1.2rem;
     }
 
     #hero {
