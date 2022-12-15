@@ -958,16 +958,13 @@ li {
         width: 90%;
     }
 
-    #home .inner{
-        height: 80%;
-    }
 
     #contact .inner{
         height: 60%;
     }
 
     #portfolio .inner {
-        height: 80%;
+        height: 85%;
     }
 
     #resume .inner {
