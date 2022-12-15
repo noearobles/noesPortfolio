@@ -905,6 +905,8 @@ li {
     .flip-card-front{
         margin-bottom: 0;
         font-size: smaller;
+        display: flex;
+        flex-direction: row;
     }
 
     .navbar-toggler {
