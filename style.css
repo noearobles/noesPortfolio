@@ -478,6 +478,7 @@ li {
     background-color: #081c15;
 }
 
+
 .tab {
     cursor: pointer;
     padding: 10px 20px;
@@ -497,6 +498,7 @@ li {
     width: 100%;
     border-radius: 3px;
     overflow: hidden;
+    padding: 2%;
 }
 
 .panel {
@@ -778,22 +780,112 @@ li {
 
 
 @media only screen and (min-device-width: 345px) and (max-device-width: 926px) and (orientation:landscape) {
+    p {
+        font-size: smaller;
+    }
 
+    .inner {
+        width: 90%;
+        height: 90%;
+    }
+
+    .tenten {
+        object-fit: contain;
+    }
+
+    #tenten {
+        height: 100%;
+        width: 100%;
+    }
+
+    .tabs {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .tab {
+        padding: 2%;
+    }
+
+    .slide>p {
+        width: 50%;
+    }
+
+    .carousel-button.prev {
+        left: .5rem;
+    }
+
+    .carousel-button.next {
+        right: .5rem;
+    }
+
+    h2.big-heading {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: smaller;
+    }
+
+    .homeStyled,
+    .aboutStyled,
+    .jobsStyled,
+    .contactStyled {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .tenten {
+        flex-direction: column;
+    }
+
+    .panels {
+        overflow-y: scroll;
+        position: sticky;
+    }
+
+    .aboutStyledPic {
+        width: 150px;
+        height: 150px;
+    }
+
+    body {
+        font-size: smaller;
+    }
+
+    .carousel-button {
+        font-size: 1rem;
+    }
+
+    #tech-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flip-card-front {
+        flex-direction: column;
+    }
 
     .flip-card {
-
-        width: 200px;
-        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: smaller;
+        width: 400px;
+        height: 300px;
 
     }
 
     .flip-card img {
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
 
     }
-
-
 
 }
 
