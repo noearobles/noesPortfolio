@@ -428,9 +428,7 @@ li {
     color: white;
 }
 
-.flip-card-back::-webkit-scrollbar {
-    display: none;
-}
+
 
 .flip-card-back {
     transform: rotateY(180deg);
