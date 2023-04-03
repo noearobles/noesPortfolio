@@ -161,9 +161,12 @@ main::-webkit-scrollbar {
 }
 
 .tenten {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 5px;
 }
 
 .tenten>li {
@@ -172,9 +175,10 @@ main::-webkit-scrollbar {
 }
 
 #tenten {
-    height: 200px;
-    width: 300px;
+    width: 400px;
+    height: 300px;
     object-fit: cover;
+    object-position: center;
 }
 
 main {
@@ -322,6 +326,17 @@ h2.title {
 
 ul {
     padding: 0%;
+}
+
+#heroList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hero-list li img {
+    height: 60px;
+    width: 60px;
 }
 
 .skills-list {
@@ -482,7 +497,6 @@ li {
     width: 100%;
     border-radius: 3px;
     overflow: hidden;
-    padding: 20px;
 }
 
 .panel {
@@ -784,6 +798,36 @@ li {
 }
 
 @media only screen and (min-device-width: 250px) and (max-device-width: 926px) and (orientation:portrait) {
+    .tenten {
+        object-fit: contain;
+    }
+
+    #tenten {
+        height: 100%;
+        width: 100%;
+    }
+
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .tab {
+        padding: 2%;
+    }
+
+    .slide>p {
+        width: 50%;
+    }
+
+    .carousel-button.prev {
+        left: .5rem;
+    }
+
+    .carousel-button.next {
+        right: .5rem;
+    }
 
     h1,
     h2,
@@ -802,7 +846,8 @@ li {
     .tenten {
         flex-direction: column;
     }
-    .panels{
+
+    .panels {
         overflow-y: scroll;
         position: sticky;
     }
@@ -820,16 +865,25 @@ li {
         font-size: 1rem;
     }
 
+    #tech-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
     .flip-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         font-size: smaller;
-        width: 250px;
-        height: 200px;
+        width: 200px;
+        height: 500px;
 
     }
 
     .flip-card img {
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
 
     }
 

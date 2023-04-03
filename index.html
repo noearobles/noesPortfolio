@@ -62,7 +62,7 @@
                 <div class="homeStyled" id="heroContainer">
                     <div class="landing">
                         <div class="animated animatedFadeInUp fadeInUp">
-                            <h1>Hello, my name is </h1>
+                            <h1>Hello, I am </h1>
                         </div>
                         <div class="animated animatedFadeInUp fadeInUp">
                             <h2 class="big-heading"> Noe Robles</h2>
@@ -70,16 +70,25 @@
                         <div class="animated animatedFadeInUp fadeInUp">
                             <h3 class="big-heading">I create things for the web</h3>
                         </div>
-                        <div class="animated animatedFadeInUp fadeInUp">
-                            <p>and I am currently enrolled at <a href="https://austincodingacademy.com/">Austin
-                                    Coding Academy</a> to increase my
-                                knowledge in full-stack web development.</p>
+                        <div class="animated animatedFadeInUp fadeInUp" id="heroList">
+                            <ul class="hero-list">
+                                <li><img src="html5Icon.png" alt="html5Icon"></li>
+                                <li><img src="cssIcon.png" alt="cssIcon"></li>
+                                <li><img src="jsIcon.png" alt="javaScriptIcon"></li>
+                            </ul>
+                            <ul class="hero-list">
+                                <li><img src="nodeJsIcon.png" alt="nodeJsIcon"></li>
+                                <li><img src="SqlIcon.png" alt="SqlIcon"></li>
+                                <li><img src="reactIcon.png" alt="reactIcon"></li>
+                            </ul>
+                            </ul>
                         </div>
                         <div id="hero">
                             <img class="aboutStyledPic"
                                 src="https://media.licdn.com/dms/image/D5603AQEYZgNzxWo_DQ/profile-displayphoto-shrink_200_200/0/1668811041122?e=1686182400&v=beta&t=SrSM0d3xga9ylgY0ikO7lIrwYDZcLJiDyVMwgWWCHpY"
                                 alt="linkedIn-pic">
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -89,7 +98,8 @@
             <div class="inner">
                 <div class="aboutStyled">
                     <h2 class="big-heading">About Me</h2>
-                    <p>I am a full-stack web developer currently learning languages and frameworks. I developed an
+                    <p>I am an aspiring full-stack web developer currently learning languages and frameworks. I
+                        developed an
                         interest in coding
                         towards the end of my time in the military.</p>
                     <p>It took me about one year after I seperated from service to start creating things for the web.
@@ -130,10 +140,8 @@
                                         <div class="flip-card-front">
                                             <h3>Technologies Used</h3>
                                             <div id="tech-icons">
-                                                <span>HTML</span><img class="portfolioIcons" src="html5Icon.png"
-                                                    alt="html5Icon">
-                                                <span>CSS</span><img class="portfolioIcons" src="cssIcon.png"
-                                                    alt="cssIcon">
+                                                <img class="portfolioIcons" src="html5Icon.png" alt="html5Icon">
+                                                <img class="portfolioIcons" src="cssIcon.png" alt="cssIcon">
                                             </div>
                                         </div>
                                         <div class="flip-card-back">
@@ -163,19 +171,18 @@
 
                                         <div class="flip-card-front">
                                             <h3>Technologies Used</h3>
-                                            <span>JavaScript</span><img class="portfolioIcons" src="jsIcon.png"
-                                                alt="javaScriptIcon">
+                                            <img class="portfolioIcons" src="jsIcon.png" alt="javaScriptIcon">
                                         </div>
                                         <div class="flip-card-back">
                                             <div class="tttThumbNail">
-                                                <h3>PokeBattle:</h3> PokeBattle against CP<p>
+                                                <h3>PokeBattle:</h3>PokeBattle against CP<p>
                                                     <a target="_blank"
                                                         href="https://noearobles.github.io/PaidProgramming/battle.html">
                                                         <img src="pokepic.png" alt="">
                                                     </a>
                                             </div>
                                             <div class="tttThumbNail">
-                                                <h3>TicTacToe:</h3> 2 Player game of TicTacToe<p>
+                                                <h3>TicTacToe:</h3>2 Player game of TicTacToe<p>
                                                     <a target="_blank"
                                                         href="https://noearobles.github.io/noestictactoe/">
                                                         <img src="ticTactToeThumbnail-Icon.png" alt="">
@@ -183,7 +190,7 @@
 
                                             </div>
                                             <div class="calcThumbNail">
-                                                <h3>Calculator:</h3> Fully functioning Calculator<p>
+                                                <h3>Calculator:</h3>Fully functioning Calculator<p>
                                                     <a target="_blank"
                                                         href="https://noearobles.github.io/calculatorjs/">
                                                         <img src="calculatorThumbnail-Icon.png" alt="">
@@ -202,7 +209,7 @@
                                         <div class="flip-card-front">
                                             <h3>Technologies Used</h3>
                                             <div id="tech-icons">
-                                                <span>MySQL</span><img class="portfolioIcons" src="SqlIcon.png" alt="">
+                                                <img class="portfolioIcons" src="SqlIcon.png" alt="">
                                             </div>
                                         </div>
                                         <div class="flip-card-back">
@@ -210,19 +217,16 @@
                                                 <h3>Coming Soon:</h3>
                                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicorrupti temporibus
                                                     facere.</p>
-                                                <a target="_blank"
-                                                    href="https://noearobles.github.io/smallBusinessWebsite/">
-                                                    <img src="sampleBusinessWebsiteThumbnail-Icon.png"
-                                                        alt="smallBusinessWebsite">
-                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                         </ul>
-                        <button class="carousel-button prev" data-carousel-button="prev">&#8678;</button>
-                        <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
+                        <div class="jobButtons">
+                            <button class="carousel-button prev" data-carousel-button="prev">&#8678;</button>
+                            <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -259,10 +263,10 @@
                             <li>Weapons Training</li>
                             <div class="tenten">
                                 <li>
-                                    <img id="tenten" src="https://i.ytimg.com/vi/rjxse-bGBvo/hqdefault.jpg" alt="">
+                                    <img id="tenten" src="armyPic.jpg" alt="">
                                 </li>
                                 <li>
-                                    <img id="tenten" src="armyPic.jpg" alt="">
+                                    <img id="tenten" src="https://i.ytimg.com/vi/rjxse-bGBvo/hqdefault.jpg" alt="">
                                 </li>
                                 <li>
                                     <img id="tenten"
@@ -275,9 +279,9 @@
                             <div class="panel-title">
                                 <h3>TenTen</h3>
                             </div>
-                            <p>After my time in the military I returned home to reculture, resocialize, and regain some
-                                creativity. I worked as a craft cocktail mixologist at <a
-                                    href="https://www.tentenaustin.com/">TenTen</a>. Some skills included:</p>
+                            <p>After my time in the military I returned home to reculture and regain some
+                                creativity. I created cocktails at <a href="https://www.tentenaustin.com/">TenTen</a>.
+                                Some skills included:</p>
                             <li>Catering</li>
                             <li>Hospitality</li>
                             <li>Team management</li>
@@ -302,9 +306,9 @@
                         </div>
                         <div class="panel" id="three-panel">
                             <div class="panel-title">
-                                <h3>Paralegal</h3>
+                                <h3>Legal</h3>
                             </div>
-                            <p>Prior to my time in the military, I served as a paralegal for my father's law <a
+                            <p>Prior to my time in the military, I served as a secretary for my father's law <a
                                     href="http://www.noerobleslaw.com/">office.</a> The
                                 majority of the work I did then was
                                 mainly administrative. Experience gained in:</p>
@@ -324,7 +328,8 @@
                     <h2 class="big-heading">What's Next?</h2>
                     <h2 class="title">Get In Touch</h2>
                     <p>My inbox is always open. Whether you
-                        have a question, would like some information, or just want to say hi, send me a message and I’ll
+                        have a question, would like some information, or just want to say hi, send me a message and I
+                        will
                         try my best to get back to you!</p><a class="email-link" href="mailto:roblesnoe1030@gmail.com"
                         target="#sHello">Say
                         Hello</a>
