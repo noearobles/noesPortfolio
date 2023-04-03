@@ -196,7 +196,6 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: start;
     background-attachment: fixed;
 }
 
