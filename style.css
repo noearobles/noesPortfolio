@@ -44,13 +44,14 @@ header {
     border-radius: 10px;
 }
 
+
 #_navBar a:hover {
     background-color: #06d6a0;
 }
 
 #social-icons img {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
 }
 
 #social-icons img:hover {
@@ -61,70 +62,176 @@ header {
 
 /* *********************END OF NAVIGATION*************************** */
 /* ************************BODY***************************************** */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+
 body {
-    height: 100%;
-    width: 100%;
+    font-family: 'Arimo', sans-serif;
+    margin: 0;
     color: #fff;
-    height: 100%;
     background-color: #0c0f0a;
     -webkit-overflow-scrolling: touch;
     -webkit-overflow-scrolling: scroll;
     background: #0c0f0a;
     overflow: hidden;
     line-height: 1.3;
-    font-size: 25px;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.carousel-button {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, .1);
+    z-index: 2;
+}
+
+
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide>img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    transition-delay: 0ms;
+    z-index: 1;
+}
+
+.tenten {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tenten>li {
+    width: 100%;
+    height: 100%;
+}
+
+#tenten {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
 }
 
 main {
     background-color: #0c0f0a;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    height: 100vh;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 section {
-    position: relative;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    text-align: start;
+    background-attachment: fixed;
 }
 
 
 .inner {
-    position: absolute;
-    width: 80%;
     border-radius: 10px;
-    padding: 2%;
     background-color: #081c15;
     box-shadow: 0px 10px 30px 0px #06d6a0;
-
+    min-height: 80%;
+    max-height: fit-content;
+    width: 80%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
 }
 
-#contact{
-    bottom: -10vh;
-}
+.innerHome {
+    border-radius: 10px;
+    background-color: #081c15;
+    box-shadow: 0px 10px 30px 0px #06d6a0;
+    width: 80%;
+    height: 100vh;
+    padding: 2%;
 
-#resume .inner {
-    height: 70%;
 }
-
-#contact .inner,
-#portfolio .inner {
-    height: 60%;
-}
-
 
 #hero {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    position: relative;
+}
+
+div {
+    border-radius: 4px;
 }
 
 .aboutStyledPic {
-    padding: 1%;
     box-shadow: 0 10px 30px -15px #06d6a0;
     max-height: 200px;
     min-height: auto;
@@ -134,18 +241,54 @@ section {
     border-width: 10px;
 }
 
-.homeStyled,
+.background-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-position: center;
+}
+
+
 .jobsStyled,
 .aboutStyled,
-.portfolioStyled,
 .contactStyled {
-    height: 100%;
-    padding: 5%;
+    box-shadow: 0 5px 30px 0px #3b28cc;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    box-shadow: 0 5px 30px 0px #3b28cc;
+    justify-content: center;
+    text-align: left;
+    padding: 1%;
+    height: 100%;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
+
+.homeStyled {
+    box-shadow: 0 5px 30px 0px #3b28cc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1%;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.portfolioStyled {
+    box-shadow: 0 5px 30px 0px #3b28cc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+}
+
 
 h2 {
     font-family: 'Archivo Black', sans-serif;
@@ -163,6 +306,7 @@ h2.big-heading {
     text-decoration-thickness: 1px;
     color: #06d6a0;
     margin-bottom: 1.5rem;
+    vertical-align: top;
 }
 
 
@@ -203,30 +347,26 @@ li {
     box-sizing: inherit;
 }
 
-.cards {
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
-}
-
 .column {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
 }
 
-.flip-card h3.big-heading {
-    font-style: 10px;
+.flip-card h3 {
+    font-style: 8px;
     padding: 0px;
+    padding-top: 1%;
+    color: #06d6a0;
 }
 
 
 .flip-card {
+    margin: 0;
     box-shadow: 0px 10px 30px 0px #06d6a0;
     background-color: #0c0f0a;
-    width: 300px;
-    height: 120px;
+    width: 500px;
+    height: 300px;
     perspective: 1000px;
 }
 
@@ -241,31 +381,31 @@ li {
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    cursor: pointer;
 }
 
 .flip-card img {
-    width: 80px;
-    height: 80px;
-
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
 
-.flip-card-front{
+.flip-card-front {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#tech-icons{
-    display: flex;
-    flex-direction: row;
-}
+
 
 .flip-card-front,
 .flip-card-back {
+    padding: 1%;
+    margin: 0;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 1%;
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -273,15 +413,23 @@ li {
     color: white;
 }
 
+.flip-card-back::-webkit-scrollbar {
+    display: none;
+}
+
 .flip-card-back {
-    gap: 5px;
     transform: rotateY(180deg);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    list-style: none;
 }
 
 .flip-card-back img {
-
     border-radius: 4px;
     box-shadow: 0 5px 30px 0px #3b28cc;
+    padding-top: auto;
 
 }
 
@@ -298,17 +446,81 @@ li {
     align-self: center;
 }
 
-.tablinks {
+.tabs {
     text-align: center;
     cursor: pointer;
     background-color: #081c15;
     color: #fff;
     border-color: #081c15;
     padding: 1%;
-    box-shadow: 0 5px 30px 0px #3b28cc;
+    box-shadow: 0 5px 30px 0px #06d6a0;
     background-color: #081c15;
     border-width: 5px;
     border-radius: 4px;
+}
+
+.tab:focus {
+    background-color: #081c15;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0px 2px;
+    background: #081c15;
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px 3px 0px 0px;
+    border-color: #3b28cc;
+}
+
+.panels {
+    margin-top: 2%;
+    background: #081c15;
+    box-shadow: 0 2rem 2rem #00000080;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.panel {
+    display: none;
+    animation: fadein .8s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.panel-title {
+    font-size: 1.5em;
+    font-weight: bold
+}
+
+.radio {
+    display: none;
+}
+
+#one:checked~.panels #one-panel,
+#two:checked~.panels #two-panel,
+#three:checked~.panels #three-panel {
+    display: block
+}
+
+#one:checked~.tabs #one-tab,
+#two:checked~.tabs #two-tab,
+#three:checked~.tabs #three-tab {
+    background: #081c15;
+    color: #fff;
+    box-shadow: 0 0.5rem 0.8rem #3b28cc;
 }
 
 .tab button {
@@ -488,35 +700,16 @@ li {
     height: 30vh;
 }
 
+
+
 /* ********************************************************END OF PARALLAX********************************************************************************************* */
 
 
 /* ********************************************************MEDIA QUERIES************************************************************************ */
 
 
-@media (min-width:766px) {
-    #mobileLinks {
-        display: none;
-    }
-
-}
-
-@media (max-width:766px) {
-    #social-icons {
-        display: none;
-    }
-
-    .skills-list li img {
-        height: 25px;
-        width: 25px;
-    }
-}
-
-
 @media only screen and (max-device-width: 1600px) {
-    .tab button {
-        height: 50px;
-    }
+
 
 
     #pBgIMG {
@@ -533,33 +726,7 @@ li {
 }
 
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (min-device-height:300px){
-    body {
-        font-size: 20px;
-    }
-
-
-    .inner {
-        padding: 1%;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    h2.big-heading {
-        font-size: clamp(10px, 15vw, 30px);
-    }
-
-
-    h2.title,
-    h3,
-    h3.big-heading {
-        font-size: clamp(10px, 8vw, 30px);
-        margin-top: 10px;
-        line-height: 1.3;
-        color: #06d6a0;
-    }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (min-device-height:300px) {
 
     .flip-card {
 
@@ -568,56 +735,6 @@ li {
 
     }
 
-    #hero {
-        padding-top: 20px;
-    }
-
-    .cards {
-        padding-top: 5px;
-    }
-
-    #about,
-    #portfolio,
-    #resume {
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-
-    .homeStyled,
-    .jobsStyled,
-    .aboutStyled,
-    .portfolioStyled,
-    .contactStyled {
-        padding: 2%;
-        min-height: fit-content;
-        max-height: 100%;
-    }
-
-    #contact {
-        height: 80vh;
-    }
-
-
-    #home .inner,
-    #about .inner {
-        height: fit-content;
-        overflow: hidden;
-    }
-
-    #resume .inner {
-        height: 90%;
-    }
-
-    #contact .inner,
-    #portfolio .inner {
-        min-height: 75%;
-        max-height: fit-content;
-    }
-
-    .tab button {
-        height: 50px;
-    }
 
     .aboutStyledPic {
         height: 175px;
@@ -626,12 +743,7 @@ li {
 }
 
 
-/* Tablet media query */
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    body {
-        font-size: 20px;
-    }
 
 
     .flip-card {
@@ -647,108 +759,12 @@ li {
 
     }
 
-
-    .aboutStyledPic {
-        height: 100%;
-        width: 100%;
-    }
-
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h2.big-heading {
-        margin: 0px;
-        font-size: clamp(10px, 20vw, 50px);
-    }
-
-
-    h2.title,
-    h3,
-    h3.big-heading {
-        font-size: clamp(10px, 8vw, 50px);
-        margin-top: 10px;
-        line-height: 1.3;
-        color: #06d6a0;
-    }
-
-    .flip-card-front,
-    .flip-card-back {
-        gap: 8px
-    }
-
-
-    .big-heading {
-        margin: 0px;
-        font-size: clamp(10px, 8vw, 20px);
-    }
-
-    .tab button {
-
-        height: unset;
-        width: unset;
-    }
-
 }
 
-@media (max-width:768px) {
-
-    
-    body {
-        font-size: 20px;
-    }
-
-    .tab {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-
-    .cards {
-        padding-top: 5px;
-    }
-
-    .flip-card-front,
-    .flip-card-back {
-        gap: 10px
-    }
-
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        display: none;
-    }
-
-    #nBarAnchor {
-        display: none;
-    }
-
-
-    .tab button {
-        width: fit-content;
-        border-radius: 5px;
-    }
-
-
-    .skills-list li img {
-        height: 40px;
-        width: 40px;
-    }
-}
 
 
 @media only screen and (min-device-width: 345px) and (max-device-width: 926px) and (orientation:landscape) {
 
-    .cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-self: center;
-        padding-top: 5px;
-        gap: 20px;
-    }
 
     .flip-card {
 
@@ -764,164 +780,50 @@ li {
     }
 
 
-    .flip-card-front,
-    .flip-card-back {
-        gap: 10px;
-    }
-
-
-    #home .inner,
-    #about .inner {
-        height: 85%;
-    }
-
-    #resume .inner {
-        height: 75%;
-    }
-
-    #contact .inner,
-    #portfolio .inner {
-        height: 60%;
-    }
-
-    .inner {
-        padding: 1%;
-        width: 90%;
-    }
-
-    .homeStyled,
-    .jobsStyled,
-    .aboutStyled,
-    .portfolioStyled,
-    .contactStyled {
-        padding: 2%;
-        height: 100%;
-
-    }
-
-    section#about.animatedFadeInUp {
-        margin-top: 30px;
-    }
-
-    div#navbarNav {
-        padding: 0px;
-    }
-
-    .aboutStyledPic {
-        height: 100px;
-        width: 100px;
-    }
-
-    .skills-list li img {
-        height: 40px;
-        width: 40px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    h2.big-heading {
-        margin: 0px;
-        font-size: clamp(10px, 20vw, 20px);
-    }
-
-
-    h2.title,
-    h3,
-    h3.big-heading {
-        font-size: clamp(10px, 8vw, 20px);
-        margin-top: 10px;
-        line-height: 1.3;
-        color: #06d6a0;
-    }
-
-
-    .big-heading {
-        margin: 0px;
-        font-size: clamp(10px, 8vw, 20px);
-    }
-
-    .tablinks {
-        font-size: smaller;
-        text-align: center;
-        cursor: pointer;
-        background-color: #081c15;
-        color: #fff;
-        border-color: #081c15;
-        padding: 1%;
-        box-shadow: 0 5px 30px 0px #3b28cc;
-        background-color: #081c15;
-        border-width: 2px;
-        border-radius: 4px;
-    }
-
-    #_navBar img:hover {
-        background-color: unset;
-        box-shadow: 15px 20px 30px -15px #3b28cc;
-        border-radius: 10px;
-    }
-
-    #_navBar img {
-        height: 20px;
-        width: 20px;
-    }
-
-    .nav-link {
-        padding: .5%;
-    }
-
-    #social-icons img {
-        height: 20px;
-        width: 20px;
-    }
-
-    .tab button {
-
-        height: unset;
-        width: unset;
-    }
 
 }
 
 @media only screen and (min-device-width: 250px) and (max-device-width: 926px) and (orientation:portrait) {
 
-    body {
-        font-size: 10px;
+    h1,
+    h2,
+    h3 {
+        font-size: smaller;
     }
 
-    section {
-        height: 70vh;
+    .homeStyled,
+    .aboutStyled,
+    .jobsStyled,
+    .contactStyled {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
-    .cards {
-        display: flex;
+    .tenten {
         flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-        gap: 30px;
+    }
+    .panels{
+        overflow-y: scroll;
+        position: sticky;
+    }
+
+    .aboutStyledPic {
+        width: 150px;
+        height: 150px;
+    }
+
+    body {
+        font-size: smaller;
+    }
+
+    .carousel-button {
+        font-size: 1rem;
     }
 
     .flip-card {
-
-        width: 200px;
-        height: 110px;
-
-    }
-
-    .flip-card-front{
-        margin-bottom: 0;
         font-size: smaller;
-        display: flex;
-        flex-direction: column;
-    }
-    #tech-icons{
-        display: flex;
-        font-display: row;
-    }
-
-    .navbar-toggler {
-        padding: 0px;
+        width: 250px;
+        height: 200px;
 
     }
 
@@ -932,126 +834,4 @@ li {
     }
 
 
-
-    #home{
-        margin-top: 10px;
-    }
-
-    #about,
-    #portfolio,
-    #resume {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    #contact {
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-
-    .homeStyled,
-    .jobsStyled,
-    .aboutStyled,
-    .portfolioStyled,
-    .contactStyled {
-        padding: 2%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .inner {
-        width: 90%;
-    }
-
-
-    #contact .inner{
-        height: 75%;
-    }
-
-    #portfolio .inner {
-        height: 85%;
-    }
-
-    #resume .inner {
-        height: 100%;
-        line-height: 1.2rem;
-    }
-
-    #hero {
-        padding-top: 5px;
-    }
-
-    .aboutStyledPic {
-        height: 120px;
-        width: 120px;
-    }
-
-
-    h1 {
-        font-size: 15px;
-    }
-
-    h2.big-heading {
-        margin-bottom: .5rem;
-        font-size: clamp(10px, 20vw, 25px);
-        font-weight: bolder;
-    }
-
-    #resume h2.big-heading,
-    h3 {
-        margin-bottom: 1.5rem;
-    }
-
-    h2.title,
-    h3,
-    h3.big-heading {
-        font-size: clamp(10px, 8vw, 20px);
-        margin-top: 10px;
-        line-height: 1.3;
-        color: #06d6a0;
-    }
-
-    .big-heading {
-        margin: 0px;
-        font-size: clamp(10px, 8vw, 20px);
-    }
-
-    .tablinks {
-        font-size: smaller;
-        text-align: center;
-        cursor: pointer;
-        background-color: #081c15;
-        color: #fff;
-        border-color: #081c15;
-        padding: 1%;
-        box-shadow: 0 5px 30px 0px #3b28cc;
-        background-color: #081c15;
-        border-width: 2px;
-        border-radius: 4px;
-    }
-
-    .tab {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .tab button {
-        font-size: 10px;
-        height: unset;
-        width: 80px;
-    }
-
-    .nav-item {
-        padding-right: 8px;
-    }
-
-    #_navBar img:hover {
-        background-color: unset;
-        box-shadow: 15px 20px 30px -15px #3b28cc;
-        border-radius: 10px;
-    }
 }
-
-
