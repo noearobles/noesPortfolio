@@ -163,21 +163,22 @@ main::-webkit-scrollbar {
     z-index: 1;
 }
 
+
+
 .tenten {
-    width: min-content;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     gap: 5px;
 }
 
-.tenten>li {
-    width: 100%;
-    height: 100%;
-}
+
 
 #tenten {
+    justify-self: center;
     width: 400px;
     height: 300px;
     object-fit: cover;
@@ -261,8 +262,6 @@ div {
     padding: 1%;
     height: 100%;
     width: 100%;
-    padding-right: 10%;
-    padding-left: 10%;
 }
 
 .homeStyled,
@@ -821,6 +820,17 @@ li {
 
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .tenten {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    
+   
     .inner {
         width: 90%;
     }
@@ -843,6 +853,18 @@ li {
 
 
 @media only screen and (min-device-width: 345px) and (max-device-width: 926px) and (orientation:landscape) {
+    .tenten {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        object-fit: contain;
+    }
+    
+ 
     header {
         font-size: 18px;
     }
@@ -860,14 +882,6 @@ li {
         height: 90%;
     }
 
-    .tenten {
-        object-fit: contain;
-    }
-
-    #tenten {
-        height: 100%;
-        width: 100%;
-    }
 
     .tabs {
         display: flex;
@@ -912,9 +926,7 @@ li {
         font-size: 18px;
     }
 
-    .tenten {
-        flex-direction: column;
-    }
+ 
 
     .panels {
         overflow-y: scroll;
@@ -981,11 +993,6 @@ li {
         object-fit: contain;
     }
 
-    #tenten {
-        height: 100%;
-        width: 100%;
-    }
-
     .tabs {
         display: flex;
         flex-direction: column;
@@ -1026,9 +1033,15 @@ li {
 
 
     .tenten {
+        width: 100%;
+        height: 100%;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
     }
-
+    
     .panels {
         overflow-y: scroll;
         position: sticky;
