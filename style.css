@@ -50,12 +50,14 @@ header {
 }
 
 #social-icons img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
+
+
 #social-icons img:hover {
-    background-color: #081c15;
+    background-color: #3b28cc;
     box-shadow: 15px 20px 30px -15px #3b28cc;
     border-radius: 10px;
 }
@@ -546,8 +548,8 @@ li {
     width: 200px;
 }
 
-.tablinks:hover {
-    background-color: #0c0f0a;
+.tab:hover {
+    background-color: #06d6a0;
 }
 
 /* ****************************END OF BODY*************************************** */
@@ -745,10 +747,14 @@ li {
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (min-device-height:300px) {
 
+    .inner {
+        width: 90%;
+    }
+
     .flip-card {
 
-        width: 300px;
-        height: 150px;
+        width: 600px;
+        height: 300px;
 
     }
 
@@ -761,7 +767,9 @@ li {
 
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
+    .inner {
+        width: 90%;
+    }
 
     .flip-card {
 
@@ -781,6 +789,10 @@ li {
 
 
 @media only screen and (min-device-width: 345px) and (max-device-width: 926px) and (orientation:landscape) {
+    .inner {
+        width: 90%;
+    }
+
     p {
         font-size: smaller;
     }
@@ -891,6 +903,17 @@ li {
 }
 
 @media only screen and (min-device-width: 250px) and (max-device-width: 926px) and (orientation:portrait) {
+
+    #resume {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+
+    .inner {
+        width: 90%;
+    }
+
     .tenten {
         object-fit: contain;
     }
