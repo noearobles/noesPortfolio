@@ -1,5 +1,6 @@
 /* **********************NAVIGATION **************************************** */
 header {
+    font-size: 24px;
     animation: 2s ease-out 0s 1 slideInLeft;
     animation-delay: 3s;
 }
@@ -163,7 +164,7 @@ main::-webkit-scrollbar {
 }
 
 .tenten {
-    width: 100%;
+    width: min-content;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -206,14 +207,13 @@ section {
     border-radius: 10px;
     background-color: #081c15;
     box-shadow: 0px 10px 30px 0px #06d6a0;
-    min-height: 80%;
-    max-height: fit-content;
+    height: 80%;
     width: 80%;
     padding: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: large;
+    font-size: 1.2rem;
 }
 
 .innerHome {
@@ -253,36 +253,8 @@ div {
     object-position: center;
 }
 
-
-.jobsStyled,
-.aboutStyled,
-.contactStyled {
-    box-shadow: 0 5px 30px 0px #3b28cc;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    padding: 1%;
-    height: 100%;
-    width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-.homeStyled {
-    box-shadow: 0 5px 30px 0px #3b28cc;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 1%;
-    height: 100%;
-    width: 100%;
-    font-size: 20px;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-.portfolioStyled {
+.jobsStyled {
+    font-size: 32px;
     box-shadow: 0 5px 30px 0px #3b28cc;
     display: flex;
     flex-direction: column;
@@ -291,7 +263,36 @@ div {
     padding: 1%;
     height: 100%;
     width: 100%;
-    font-size: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.homeStyled,
+.aboutStyled,
+.contactStyled {
+    font-size: 32px;
+    box-shadow: 0 5px 30px 0px #3b28cc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    height: 100%;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.portfolioStyled {
+    font-size: 32px;
+    box-shadow: 0 5px 30px 0px #3b28cc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -332,7 +333,7 @@ ul {
 #heroList {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .hero-list li img {
@@ -342,9 +343,18 @@ ul {
 
 .skills-list {
     columns: 2;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 10px;
 }
 
-.skills-list li img {
+.skills-list img {
+    height: 40px;
+    width: 40px;
+}
+
+.skills-list img {
     height: 60px;
     width: 60px;
 }
@@ -441,7 +451,7 @@ li {
 }
 
 .flip-card-back::-webkit-scrollbar {
-    background-color: #0c0f0a;
+    display: none;
 }
 
 .flip-card-back img {
@@ -493,21 +503,26 @@ li {
     border-color: #3b28cc;
 }
 
+.panels::-webkit-scrollbar {
+    display: none;
+}
+
 .panels {
     margin-top: 2%;
     background: #081c15;
-    box-shadow: 0 2rem 2rem #00000080;
     height: 100%;
     width: 100%;
     border-radius: 3px;
-    overflow: hidden;
+    overflow: scroll;
     padding: 2%;
+    -ms-overflow-style: none;
 }
 
 .panel {
     display: none;
     animation: fadein .8s;
 }
+
 
 @keyframes fadein {
     from {
