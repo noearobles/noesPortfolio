@@ -213,7 +213,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
 }
 
 .innerHome {
@@ -259,7 +258,6 @@ div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 1%;
     height: 100%;
     width: 100%;
@@ -773,6 +771,47 @@ li {
 
     }
 
+    .jobsStyled {
+        font-size: 24px;
+        box-shadow: 0 5px 30px 0px #3b28cc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        height: 100%;
+        width: 100%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .homeStyled,
+    .aboutStyled,
+    .contactStyled {
+        font-size: 24px;
+        box-shadow: 0 5px 30px 0px #3b28cc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        height: 100%;
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .portfolioStyled {
+        font-size: 24px;
+        box-shadow: 0 5px 30px 0px #3b28cc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        height: 100%;
+        width: 100%;
+    }
 
     .aboutStyledPic {
         height: 175px;
@@ -804,6 +843,10 @@ li {
 
 
 @media only screen and (min-device-width: 345px) and (max-device-width: 926px) and (orientation:landscape) {
+    header {
+        font-size: 18px;
+    }
+
     .inner {
         width: 90%;
     }
@@ -862,9 +905,11 @@ li {
     .homeStyled,
     .aboutStyled,
     .jobsStyled,
-    .contactStyled {
+    .contactStyled,
+    .portfolioStyled {
         padding-left: 5%;
         padding-right: 5%;
+        font-size: 18px;
     }
 
     .tenten {
@@ -918,6 +963,9 @@ li {
 }
 
 @media only screen and (min-device-width: 250px) and (max-device-width: 926px) and (orientation:portrait) {
+    header {
+        font-size: 18px;
+    }
 
     #resume {
         margin-top: 100px;
@@ -969,10 +1017,13 @@ li {
     .homeStyled,
     .aboutStyled,
     .jobsStyled,
-    .contactStyled {
+    .contactStyled,
+    .portfolioStyled {
         padding-left: 5%;
         padding-right: 5%;
+        font-size: 18px;
     }
+
 
     .tenten {
         flex-direction: column;
@@ -988,9 +1039,6 @@ li {
         height: 150px;
     }
 
-    body {
-        font-size: smaller;
-    }
 
     .carousel-button {
         font-size: 1rem;
