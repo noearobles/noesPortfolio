@@ -322,7 +322,7 @@ body.dark-theme {
 .home__perfil {
     width: 170px;
     height: 160px;
-    background: url('/assets/images/heroLanding.jpg');
+    background: url('/landing.jpg');
     background-size: contain;
     border-radius: 5.5rem;
     overflow: hidden;
