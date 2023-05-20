@@ -17,8 +17,8 @@
     /* Change the first number */
     /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
     --gradient-color: linear-gradient(180deg,
-            hsla(207, 48%, 72%, 0),
-            hsla(207, 65%, 65%, 1));
+            hsla(174, 48%, 72%, 0),
+            hsla(174, 65%, 65%, 1));
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
@@ -322,8 +322,7 @@ body.dark-theme {
 .home__perfil {
     width: 170px;
     height: 160px;
-    background: url('/landing.jpg');
-    background-size: contain;
+    background: var(--gradient-color);
     border-radius: 5.5rem;
     overflow: hidden;
     display: flex;
@@ -767,7 +766,6 @@ body.dark-theme {
     left: 1.25rem;
     z-index: 10;
     background-color: var(--body-color);
-    border-radius: 1.5rem;
     color: var(--title-color);
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
