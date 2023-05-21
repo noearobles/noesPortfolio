@@ -131,6 +131,12 @@ body.dark-theme {
     box-shadow: 0 4px 20px hsla(207, 24%, 8%, 0.4);
 }
 
+.dark-theme .home__perfil {
+    background: linear-gradient(180deg,
+            hsla(250, 48%, 72%, 0),
+            hsla(250, 65%, 65%, 1));
+}
+
 .dark-theme .home__social-link {
     color: var(--title-color);
 }
@@ -931,7 +937,7 @@ body.dark-theme {
 }
 
 /* For medium devices */
-@media screen and (min-width:576px) {
+@media screen and (min-width: 576px) {
 
     .nav,
     .nav__menu {
