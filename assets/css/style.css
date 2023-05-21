@@ -334,6 +334,7 @@ body.dark-theme {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    transition: background 0.4s;
 }
 
 .home__perfil img {
