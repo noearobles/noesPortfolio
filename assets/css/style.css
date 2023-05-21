@@ -373,11 +373,9 @@ body.dark-theme {
     padding-right: 4rem;
 }
 
-.home__info-description a {
-    display: flex;
-    align-items: center;
-    column-gap: 0.5rem;
+.home__info-description i {
     color: var(--title-color);
+    vertical-align: middle;
 }
 
 .home__info-description a:hover {
