@@ -595,6 +595,17 @@ body.dark-theme {
 
 .projects__img {
     width: 250px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.projects__imgPK {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
     border-radius: 0.75rem;
     margin-bottom: 1.25rem;
 }
